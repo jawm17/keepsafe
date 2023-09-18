@@ -1,0 +1,42 @@
+{
+  "name": "nvus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.18.7"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "bcrypt": "^4.0.1",
+    "cookie-parser": "^1.4.5",
+    "eth-sig-util": "^3.0.1",
+    "ethereumjs-util": "^7.1.4",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.5.8",
+    "mongoose": "^5.9.15",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "twilio": "^4.16.0",
+    "viem": "^1.6.4",
+    "web3": "^1.7.3"
+  },
+  "engines": {
+    "node": "14.21.3",
+    "npm": "6.14.18"
+  }
+}

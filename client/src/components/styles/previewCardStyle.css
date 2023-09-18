@@ -1,0 +1,24 @@
+.previewCard {
+    width: calc(100% - 2px);
+    height: 180px;
+    background-color: gray;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.previewThumbnail {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    filter: blur(12px);
+    cursor: pointer;
+}
+
+.previewThumbnailUnlocked {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+}

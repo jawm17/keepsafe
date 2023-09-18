@@ -1,0 +1,42 @@
+#homeLogo {
+    font-size: 25px;
+    font-family: Best-font;
+    background-color: #4158D0;
+    background-image: linear-gradient(120deg, #00DBDE 0%, #FC00FF 100%);
+    /* background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
+    /* background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); */
+    /* background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%); */
+    /* background: -webkit-linear-gradient(120deg, #00DBDE 0%, #FC00FF 100%); */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.topNavFlex {
+    width: 100vw;
+    position: fixed;
+    height: 75px;
+    /* margin-top: 25px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+#topNav {
+    max-width: 440px;
+    width: 80vw;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+#topNavFlexFaux {
+    z-index: 6;
+}
+
+.topFauxNavBtn {
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+}
