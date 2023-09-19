@@ -15,9 +15,9 @@ export default function Header() {
         <div>
             <div id="header">
                 <div id="headerInner">
-                    <img src={logo} id="logoHeader"></img>
+                    <img src={logo} id="logoHeader" onClick={() => window.location.reload()}></img>
                     <div id="headerBtnArea">
-                        <div className="headerBtn">
+                        <div className="headerBtn" onClick={() => window.location.reload()}>
                             home
                         </div>
                         <div className="headerBtn" onClick={() => scroll("actionSection")}>
@@ -43,7 +43,7 @@ export default function Header() {
             </div>
             <div id={menuOpen ? "dropDownMenuOpen" : "dropDownMenu"} className="dropDownMenu">
                 <div id="menuOptionArea">
-                    <div className="menuOption">
+                    <div className="menuOption" onClick={() => window.location.reload()}>
                         home
                     </div>
                     <div className="menuOption" onClick={() => scroll("actionSection")}>
