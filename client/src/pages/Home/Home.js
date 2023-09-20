@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./homeStyle.css";
-import logo from "../../assets/keepsafeLogo.jpeg";
+// import logo from "../../assets/keepsafeLogo.jpeg";
 import Header from "../../components/Header";
+import HeroVid from "./trafic.mp4"
 
 export default function Home() {
   const location = "Round Rock";
@@ -11,20 +12,28 @@ export default function Home() {
   return (
     <div id="homePage">
       <Header />
-      <div id="hero">
-        <div>
-          <div id="heroTextFlex">
-            <div id="heroTitle">
-              keep {location} safe
+      {/* ====== Hero ====== */}        
+     
+
+      <div className="video-hero-container">
+            <video className="video-background" autoPlay muted loop>
+                <source src={HeroVid} type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+            <div className="video-overlay"></div>
+            <div className="video-content">
+                {/* Add your content here, e.g., title, subtitle, button */}
+                <h1>Keep Round Rock Safe</h1>
+                <p>Empower Our Streets, Support Our Shops</p>
+
+                {/* <p> a vibrant collaboration of local businesses. We're pioneering new sign guidelines to bolster safety and drive economic vitality in Round Rock.</p> */}
             </div>
-          </div>
-          <div id="heroTextFlex">
-            <div id="heroSubTitle">
-              Keep {location} Safe is a coalition of diverse local businesses advocating for new sign rules to enhance safety and promote economic growth in our community.
-            </div>
-          </div>
+        </div> 
+                <img src="https://testsiterd.kinsta.cloud/wp-content/uploads/2023/04/footer-experiment-Keep-Round-Rock-Safe-04.png"id="logoHero" onClick={() => window.location.reload()}></img>
+        <div id="wave">
+        <div className="wavy-section">
         </div>
-      </div>
+</div>
       <div id="infoSection">
         <div id="infoText">
           Empower {location} with Electronic Message Center (EMC) signs: a pivotal tool for economic growth, heightened public safety, and emergency responsiveness. Restricted to I-35 and SH-45 only, EMC signs respect our city’s serene and scenic areas and will be limited to high-traffic commercial corridors only. Let’s modernize {location}’s sign regulations and champion a safer, prosperous future for us all.

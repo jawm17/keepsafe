@@ -1,18 +1,21 @@
 /* header ================================= */
 #header {
-    width: 100vw;
+    left: 15%;
+    right: 15%;
+    color: white;
     position: fixed;
     top: 0px;
+    padding-top: 35px;
     z-index: 5;
-    background-color: white;
-    height: 100px;
+    background-color: transparent;
     display: flex;
     justify-content: center;
-    box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.1);
 }
 
 #headerInner {
     height: 100%;
+    padding-bottom: 10px;
+
     /* max-width: 1300px;
     width: 100%; */
     width: calc(90% - 0px);
@@ -20,40 +23,46 @@
     display: flex;
     align-items: center;
     position: relative;
+    border-bottom: solid rgba(255, 255, 255, 0.298) 1px;
 }
 
 #logoHeader {
-    height: 65px;
+    height: 70px;
+    margin-right: 100px;
 }
 
 #headerBtnArea {
     display: flex;
     align-items: center;
-    margin-left: 40px;
+    /* margin-left: 40px; */
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .headerBtn {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
     text-transform: uppercase;
-    font-weight: bold;
-    margin-right: 20px;
-    font-size: 18px;
+    margin-right: 40px;
+    font-size: 15px;
+    letter-spacing: 2px;
     cursor: pointer;
 }
 
 #actNowBtn {
     position: absolute;
     right: 0px;
-    width: 120px;
-    height: 40px;
-    border-radius: 4px;
-    background-color: #001566;
-    background-color: #031e87;
+    width: 100px;
+    height: 30px;
+    border-radius: 2px;
+    border: solid white 2px;
+    /* background-color: #031d8789; */
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
     text-transform: uppercase;
     font-weight: 800px;
     cursor: pointer;
@@ -107,11 +116,12 @@
 .menuOption {
     width: 80%;
     margin-left: 10%;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
     text-transform: uppercase;
-    font-weight: bold;
     margin-right: 20px;
-    font-size: 18px;
+    font-size: 15px;
+    letter-spacing: 2px;
     cursor: pointer;
     border-bottom: solid 1px gray;
     padding-bottom: 10px;
@@ -130,13 +140,20 @@
     justify-content: center;
     align-items: center;
     color: white;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
     text-transform: uppercase;
     font-weight: 800px;
     cursor: pointer;
 }
 
 @media only screen and (max-width: 800px) {
+    #header {
+        left: 0%;
+        right: 0%;
+
+    }
+    
     #headerBtnArea {
         display: none;
     }
@@ -147,5 +164,6 @@
 
     #menuBtn {
         display: initial;
+        padding-bottom: 25px;
     }
 }

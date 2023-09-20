@@ -1,9 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;1,500&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* Your other CSS styles go below */
+
+
 #homePage {
     /* font-family: 'Space Grotesk', sans-serif; */
 }
 
 /* hero section ======================================================================= */
-#hero {
+.video-hero-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background: no-repeat;
+    background-size: cover;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Adjust the 0.5 value to make it darker or lighter */
+    z-index: 0;
+}
+
+.video-content {
+    font-family: 'Quicksand', sans-serif;
+    width: 90%;
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+}
+.video-content h1{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 75px;
+    padding-bottom: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+#logoHero{
+    /* height: 500px; */
+    width: 15%;
+    margin: auto;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+.video-content p{
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.2;
+    font-size: 35px;
+    font-weight: 100;
+    width: 35%;
+    margin: auto;
+}
+
+/* Adjust styles for mobile responsiveness */
+@media (max-width: 768px) {
+    .video-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .video-content p {
+        font-size: 1rem;
+    }
+}
+
+#wave{
+    position: relative;
+    height: 600px;
+    width: 100vw;
+    background-color: #ffffff;
+}
+.wavy-section {
+        background-color: rgba(255, 0, 0, 0);
+        position: absolute;
+        top: -350px;
+    width: 100%;
+    height: 200px;
+    background-image: url('./svgfile.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding-top: 150px; /* Adjust based on the height of your SVG */
+}
+
+/* #hero {
     margin-top: 100px;
     width: 100vw;
     height: calc(100vh - 100px);
@@ -61,7 +166,9 @@
     #heroSubTitle {
         font-size: 16px;
     }
-}
+} */
+
+
 
 /* info section ======================================================================= */
 #infoSection {
@@ -262,15 +369,19 @@
         padding-top: 40px;
         padding-bottom: 40px;
     }
+
     #largeLogo {
         width: 140px;
     }
+
     #actionTitle {
         font-size: 32px;
     }
+
     #actionSubTitle {
         font-size: 16px;
     }
+
     #actionSubTitle2 {
         font-size: 16px;
     }
@@ -323,18 +434,22 @@
         display: block;
         padding-bottom: 20px;
     }
+
     #formTitle {
         font-size: 45px;
     }
+
     #formSubTitle {
         text-align: center;
         width: 100%;
         margin-top: 20px;
     }
+
     #formArea {
         margin-top: 20px;
         margin-left: 0;
     }
+
     #googleForm {
         width: 100%;
     }
@@ -344,11 +459,13 @@
     #formSection {
         padding-top: 40px;
     }
+
     #formTitle {
         font-size: 32px;
     }
+
     #formSubTitle {
-       font-size: 14px;
+        font-size: 14px;
         margin-top: 10px;
     }
 }
@@ -377,6 +494,7 @@
     #supportersSection {
         padding-top: 40px;
     }
+
     #supportersTitle {
         font-size: 32px;
     }
@@ -411,7 +529,7 @@
     height: 65px;
 }
 
-#footerContactBtn  {
+#footerContactBtn {
     width: 120px;
     height: 40px;
     background-color: white;
