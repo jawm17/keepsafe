@@ -1,11 +1,22 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../assets/keepsafeLogo.jpeg";
 import "./styles/headerStyle.css";
 
 export default function Header() {
     const location = "Round Rock";
     const [menuOpen, setMenuOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
 
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > window.innerHeight * 0.2);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
     function scroll(section) {
         document.getElementById(section).scrollIntoView({ behavior: 'smooth' });
         setMenuOpen(false);
@@ -13,7 +24,7 @@ export default function Header() {
 
     return (
         <div>
-            <div id="header">
+            <div className={`headerNavbar ${scrolled ? 'scrolled' : ''}`}>
                 <div id="headerInner">
                     <img src="https://testsiterd.kinsta.cloud/wp-content/uploads/2023/04/footer-experiment-Keep-Round-Rock-Safe-04.png"id="logoHeader" onClick={() => window.location.reload()}></img>
                     <div id="headerBtnArea">

@@ -1,0 +1,23 @@
+/* supporters section ======================================================================= */
+#supportersSection {
+    width: 100vw;
+    min-height: 50vh;
+
+}
+
+#supportersTitle {
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 100px;
+
+}
+
+@media only screen and (max-width: 800px) {
+    #supportersSection {
+        padding-top: 40px;
+    }
+
+    #supportersTitle {
+        font-size: 32px;
+    }
+}
