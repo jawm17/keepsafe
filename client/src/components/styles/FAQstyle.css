@@ -28,7 +28,7 @@
     /* width: 100%; */
     /* margin-left: 10%; */
     background-color: white;
-    min-height: 45px;
+    min-height:45px;
     margin-top: 40px;
     cursor: pointer;
     transition: all 0.2s ease-out;
@@ -44,7 +44,7 @@
     min-height: 45px;
     display: flex;
     align-items: center;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.4;
 }
 
@@ -52,7 +52,7 @@
     font-family: 'Open Sans', sans-serif;
     margin-top: 15px;
     margin-bottom: 15px;
-    color: rgb(37, 37, 37);
+    color: rgb(71, 70, 70);
     font-size: 16px;
     display: none;
     line-height: 1.4;
