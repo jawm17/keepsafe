@@ -9,7 +9,7 @@ export default function Header() {
 
     useEffect(() => {
         const handleScroll = () => {
-            setScrolled(window.scrollY > window.innerHeight * 0.2);
+            setScrolled(window.scrollY > window.innerHeight * 0.1);
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -24,7 +24,7 @@ export default function Header() {
 
     return (
         <div>
-            <div className={`headerNavbar ${scrolled ? 'scrolled' : ''}`}>
+            <div className={`headerNavbar ${scrolled || menuOpen ? 'scrolled' : ''}`}>
                 <div id="headerInner">
                     <img src="https://testsiterd.kinsta.cloud/wp-content/uploads/2023/04/footer-experiment-Keep-Round-Rock-Safe-04.png"id="logoHeader" onClick={() => window.location.reload()}></img>
                     <div id="headerBtnArea">

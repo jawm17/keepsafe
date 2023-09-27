@@ -9,7 +9,6 @@ import Info from "../../components/Info";
 import FAQComp from "../../components/FAQComp";
 import Action from "../../components/Action";
 import Form from "../../components/Form";
-
 import Alerts from "../../components/Alerts";
 import Footer from "../../components/Footer";
 
