@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./styles/infoStyle.css";
 
-
-
 export default function Info() {
   const location = "Round Rock";
 
