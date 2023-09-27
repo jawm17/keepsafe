@@ -24,10 +24,10 @@ export default function Home() {
       <Supporters />
       {/*===== Info =====*/}
       <Info />
-      {/*===== FAQ =====*/}
-      <FAQComp />
       {/*===== Action =====*/}
       <Action />
+      {/*===== FAQ =====*/}
+      <FAQComp />
       {/*===== Form =====*/}
       <Form />
       {/*===== Alerts =====*/}

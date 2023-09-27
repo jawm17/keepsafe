@@ -1,103 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;1,500&family=Quicksand:wght@300;400;500;600;700&display=swap');
 
+:root{
+    --textColor: #001566;
+
+}
 
 #homePage {
 
 }
 
-
-/* action section ======================================================================= */
-#actionSection {
-    width: 100vw;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    scroll-margin: 80px;
-}
-
-#actionImgFlex {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-#largeLogo {
-    width: 240px;
-}
-
-#actionTitle {
-    text-transform: uppercase;
-    color: black;
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 500;
-    font-size: 65px;
-    /* max-width: 80vw; */
-    text-align: center;
-    line-height: 1.2;
-    margin-top: 20px;
-}
-
-#actionSubTitle {
-    width: 80%;
-    margin-left: 10%;
-    text-align: center;
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 500;
-    margin-top: 20px;
-    font-size: 20px;
-    color: rgb(58, 58, 58);
-    line-height: 1.2;
-}
-
-#actionSubTitle2 {
-    width: 80%;
-    margin-left: 10%;
-    text-align: center;
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 700;
-    margin-top: 20px;
-    font-size: 20px;
-    color: rgb(58, 58, 58);
-}
-
-@media only screen and (max-width: 1000px) {
-    /* #actionSection {
-        width: 100vw;
-        padding-top: 40px;
-        padding-bottom: 40px;
-    } */
-
-    #largeLogo {
-        width: 180px;
-    }
-
-    #actionTitle {
-        font-size: 40px;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    #actionSection {
-        width: 100vw;
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
-
-    #largeLogo {
-        width: 140px;
-    }
-
-    #actionTitle {
-        font-size: 32px;
-    }
-
-    #actionSubTitle {
-        font-size: 16px;
-    }
-
-    #actionSubTitle2 {
-        font-size: 16px;
-    }
-}
 
 
 

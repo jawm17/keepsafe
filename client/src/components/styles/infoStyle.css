@@ -1,50 +1,57 @@
 /* info section ======================================================================= */
 #infoSection {
-    width: 100vw;
-    min-height: 100vh;
-
+    padding: 0 200px;
+    min-height: 70vh;
 }
 
-#infoTitle {
-    font-size: 4rem;
-    text-align: center;
-    padding-top: 100px;
-
-}
 #infoSection .section {
-    max-width: 1200px;
     margin: auto;
+    padding-bottom: 50px;
+    padding-top: 0px;
 }
 
 #infoSection .container {
     display: flex;
     align-items: center;
-    /* margin: 100px 0; */
+    margin-bottom: 50px;
+    margin-top: 0px;
 }
 
 #infoSection .info {
     flex: 1;
-    margin-right: 20px;
+    margin-right: 150px;
 }
 
+
+#infoSection .reversed .info {
+    margin-left: 150px;
+    margin-right: 0;
+}
 #infoSection .info h2 {
+    font-family: 'Space Grotesk', sans-serif;
+
     margin: 0;
     padding: 0;
-    font-size: 24px;
+    font-size: 36px;
+    color: var(--textColor);
+    padding-bottom: 25px;
+
 }
 
 #infoSection .info p {
-    margin-top: 10px;
+    font-size: 18px;
+
 }
 
-#infoSection img {
-    width: 600px;
+.infoImg  {
+    width: 450px;
     height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
 }
-
-#infoSection .info .reversed .info {
-    margin-left: 20px;
-    margin-right: 0;
+.infoImg  img{
+    background: cover;
+    width: 100%;
 }
 
 @media (max-width: 768px) {

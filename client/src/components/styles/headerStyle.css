@@ -44,12 +44,14 @@
 
 #logoHeader {
     height: 70px;
+    width: 50px;
     margin-right: 50px;
+    background-image: url(https://testsiterd.kinsta.cloud/wp-content/uploads/2023/04/footer-experiment-Keep-Round-Rock-Safe-04.png);
+    background-size: cover;
 }
 
 .scrolled #logoHeader {
-    filter: invert();
-    /* filter: hue-rotate(240deg); */
+    background-image: url(https://testsiterd.kinsta.cloud/wp-content/uploads/2023/04/Keep-Round-Rock-Safe-02-smaller-1.png);
 }
 
 .svgFill {

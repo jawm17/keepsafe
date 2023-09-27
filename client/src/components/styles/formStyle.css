@@ -1,4 +1,13 @@
-
+#formSection{
+    
+}
+#formSection h1{
+    text-align: center;
+    color: var(--textColor);
+    font-size: 5rem;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
 
 
 

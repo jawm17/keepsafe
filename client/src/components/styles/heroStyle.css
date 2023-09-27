@@ -13,8 +13,9 @@
     left: 0;
     z-index: 1;
     text-align: center;
-    font-family: 'Quicksand', sans-serif;
     color: #ffffff;
+    font-family: 'Space Grotesk', sans-serif;
+
 }
 .heroContent h1{
     font-size: 5rem;
@@ -22,6 +23,8 @@
 }
 .heroContent p{
     font-size: 2rem;
+    color: #ffffff8d;
+
 }
 /* Video */
 .video-overlay {
@@ -30,7 +33,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.603);
     /* Adjust the 0.5 value to make it darker or lighter */
     z-index: 0;
 }
@@ -48,10 +51,9 @@
     background-size: cover;
 }
 .video-content h1{
-    font-family: 'Quicksand', sans-serif;
-    font-size: 75px;
+    font-family: 'Space Grotesk', sans-serif;
+        font-size: 75px;
     padding-bottom: 25px;
-    font-weight: 600;
     text-transform: uppercase;
 
 }
@@ -66,10 +68,9 @@
     z-index: 1;
 }
 .video-content p{
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     line-height: 1.2;
     font-size: 35px;
-    font-weight: 100;
     width: 35%;
     margin: auto;
 }
