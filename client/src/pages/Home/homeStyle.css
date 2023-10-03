@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'WorkSans';
+    src: url('../../assets/Work_Sans/WorkSans-VariableFont_wght.ttf');
+}
+
+
+
 /* HEADER ======================================================= */
 #headerInitial {
     width: 100vw;

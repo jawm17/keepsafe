@@ -1,14 +1,105 @@
 
 
 /* footer section ======================================================================= */
-#footerSection{
-    text-align: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
+footer{
+  font-family: 'Space Grotesk', sans-serif;
+
+  padding: 50px 350px;
+    /* background-color: rgb(235, 231, 231); */
+    background-color: rgb(255, 255, 255);
+}
+#copyWrite{
+  padding-top: 25px;
+  margin-bottom: -25px;
+  text-align: center;
+  width: 100%;
+  color: rgba(0, 0, 0, 0.425);
+
+}
+#footer{
+  padding-bottom: 100px;
+   border-bottom: rgba(0, 0, 0, 0.182) solid 2px;
+    display: flex;
+}
+.footerSections{
+  flex: 1 32%;
+}
+/* Left side of footer */
+#leftFooter{
+  display: flex;
+}
+#footerLogo{
+  width: 75px;
+  height: 75px;
+  padding-right: 20px;
+  background-image: url("../../assets/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter:invert(100);
+}
+#logoWords{
+  padding-left: 20px;
+  border-left: black solid 1px;
+  height: fit-content;
+}
+#logoWords h5{
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+#logoWords p{
+  text-transform: capitalize;
+  font-weight: 300;
+  font-size: 15px;
+}
+/* mid side of footer */
+#midFooter{
+  padding-left: 100px;
+  color: rgba(0, 0, 0, 0.425);
+}
+#midFooter > div{
+  padding-bottom: 25px;
+}
+/* right side of footer */
+#rightFooter{
+  display: flex;
+  flex-direction: column;
 }
 
+#rightFooter > div{
+  flex: 1 1 100%;
+}
+/* btn */
+#contactBtn{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  color: white;
+
+}
+#contactBtn p{
+  background-color: #001566;
+  width: 175px;
+    padding: 15px 8px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#contactBtn p span{
+  margin-left: 10px;
+  /* border: white 2px solid; */
+  border-radius: 100%;
+  padding: 4.5px 5px;
+}
+/* Social icons */
+#lab_social_icon_footer{
+    display: flex;
+    justify-content: end;
+    padding-right: 20px;
+  }
 #lab_social_icon_footer .social{
-    width: 50px;
+    width: 35px;
   }
   
   #lab_social_icon_footer a {
@@ -50,3 +141,81 @@
   #lab_social_icon_footer #social-em:hover {
     fill: #f39c12;
   }
+
+
+
+@media screen and (max-width: 768px) {
+  footer{
+    padding: 30px ;
+    padding-top: 100px;
+  }
+  #copyWrite{
+    font: 14px;
+
+  
+  }
+  #footer{
+    padding-bottom: 100px;
+     border-bottom: rgba(0, 0, 0, 0.182) solid 2px;
+      flex-wrap: wrap;
+      flex-direction: column;
+
+  }
+
+  /* Left side of footer */
+  #leftFooter{
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  #footerLogo{
+    width: 50px;
+    height: 50px;
+  }
+  #logoWords{
+    padding-left: 15px;
+    border-left: black solid 1px;
+    height: fit-content;
+  }
+  #logoWords h5{
+    font-size: 18px;
+  }
+  #logoWords p{
+    font-size: 14px;
+  }
+  /* mid side of footer */
+  #midFooter{
+    text-align: center;
+    padding-left: 0;
+  }
+  #midFooter > div{
+    margin-bottom:0px;
+
+  }
+  /* right side of footer */
+  #rightFooter{
+    justify-content: center;
+
+  }
+  
+  #rightFooter > div{
+    flex: 1 1 100%;
+  }
+  /* btn */
+  #contactBtn{
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+  #contactBtn p{
+    background-color: #001566;
+    width: 175px;
+      padding: 15px 8px;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 600;
+  }
+  #lab_social_icon_footer .social{
+      width: 30px;
+    }
+
+  
+}

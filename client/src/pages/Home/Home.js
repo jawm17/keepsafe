@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from "react";
 import HeroVid from "../../assets/trafic.mp4";
 import LogoPng from "../../assets/logo.png";
-import Form from "../../components/Form";
 import "./homeStyle.css";
+
+// Comps 
+import Footer from "../../components/Footer"
+import Form from "../../components/Form"
 
 export default function Home() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -207,6 +210,10 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+            {/* Form */}
+            <Form/>
+            {/* Footer */}
+            <Footer/>
         </div>
     );
 }

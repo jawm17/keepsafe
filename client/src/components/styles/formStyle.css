@@ -1,49 +1,42 @@
 /* form section ======================================================================= */
 #formSection {
-    padding-top: 80px;
-    width: 100vw;
+    padding: 100px 350px;
     background-color: #001566;
     scroll-margin: 80px;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    position: relative;
 }
-
 #formFlex {
-    max-width: 900px;
-    width: 100%;
-    height: 100vh;
-    /* background-color: red; */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+}
+#formFlex > div{
+    flex: 1;
 }
 
 #formInfo {
-    width: calc(100% - 550px);
-    height: 100%;
-    /* background-color: red; */
     color: white;
 }
 
 #formInfoTitle {
-    font-size: 32px;
-    font-family: 'Space Grotesk', sans-serif;
+    font-size: 42px;
+    padding-bottom: 20px;
+    font-family: 'WorkSans';
+    font-weight: 400;
 }
 
 #formInfoSub {
-    font-size: 18px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    font-family: 'Space Grotesk', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.8;
+    padding-bottom: 20px;
+    
+    width: 75%;
+    font-family: 'WorkSans';
 }
 
 .contactFlex {
     display: flex;
     align-items: center;
     margin-top: 10px;
+    
 }
 
 #contactIcon {
@@ -52,28 +45,31 @@
 }
 
 .contact {
+    font-weight: 400;
     margin-left: 20px;
     font-size: 18px;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'WorkSans';
+    
 }
 
 #formInputs {
-    /* background-color: white; */
-    height: 100%;
-    width: 510px;
-    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .inputTitle {
+    width: 80%;
+    text-align: left;
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
+    padding-bottom: 10px;
     color: white;
 }
 
 .formInputArea {
-    width: 100%;
-    height: 40px;
-    border-radius: 8px;
+    height: 50px;
+    width: 80%;
     background-color: white;
     border: solid 1px gray;
     display: flex;
@@ -81,23 +77,63 @@
     align-items: center;
     margin-bottom: 20px;
 }
-
+#messageImput{
+    height: 115px;
+}
 .formInput {
-    width: 98%;
     font-family: 'Space Grotesk', sans-serif;
 }
 
 #submitFormBtn {
-    width: 100%;
-    height: 40px;
-    background-color: #056BAB;
-    border: solid 1px #056BAB;
-    border-radius: 4px;
+    width: 80%;
+    
+    height: 35px;
+    background-color: red;
+    text-transform: uppercase;
+    /* border: solid 1px #056BAB; */
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     font-family: 'Space Grotesk', sans-serif;
     cursor: pointer;
-    margin-top: 40px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    #formSection {
+        padding: 50px 50px;
+        background-color: #001566;
+        scroll-margin: 80px;
+    }
+    #formInfoSub {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.8;
+        padding-bottom: 20px;
+        
+        width: 90%;
+        font-family: 'WorkSans';
+    }
+    #formFlex {
+        gap: 25px;
+        flex-direction: column;
+    }
+    .inputTitle {
+        width: 100%;
+        font-size: 16px;
+        padding-top: 10px;
+    }
+    
+    .formInputArea {
+        height: 40px;
+        width: 100%;
+    }
+    #messageImput{
+        height: 100px;
+    }
+
+#submitFormBtn {
+    width: 100%;
+}
 }
