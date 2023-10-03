@@ -9,7 +9,7 @@ export default function Form() {
             <div id="formFlex">
                 <div id="formInfo">
                     <div id="formInfoTitle">
-                        Sign The Petition
+                        Join The Movement
                     </div>
                     <div id="formInfoSub">
                         Please call or email to arrange an initial consultation.  Office meetings are by appointment only
@@ -28,7 +28,7 @@ export default function Form() {
                             <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
                         </svg>
                         <div className="contact">
-                            keeproundrocksafe@gmail.com
+                            Keeproundrocksafe@gmail.com
                         </div>
 
                     </div>
@@ -53,9 +53,9 @@ export default function Form() {
                         <input className="formInput"></input>
                     </div>
                     <div className="inputTitle">
-                        Address
+                        Message
                     </div>
-                    <div className="formInputArea">
+                    <div className="formInputArea" id="messageImput">
                         <input className="formInput"></input>
                     </div>
                     <div id="submitFormBtn">

@@ -3,6 +3,10 @@ import HeroVid from "../../assets/trafic.mp4";
 import LogoPng from "../../assets/logo.png";
 import "./homeStyle.css";
 
+// Comps 
+import Footer from "../../components/Footer"
+import Form from "../../components/Form"
+
 export default function Home() {
     const [menuOpen, setMenuOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
@@ -65,6 +69,10 @@ export default function Home() {
             <div id="section1">
 
             </div>
+            {/* Form */}
+            <Form/>
+            {/* Footer */}
+            <Footer/>
         </div>
     );
 }
