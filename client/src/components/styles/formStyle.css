@@ -4,79 +4,100 @@
     width: 100vw;
     background-color: #001566;
     scroll-margin: 80px;
-}
-
-#formTitleArea {
-    width: 80%;
-    margin-left: 10%;
-    border-bottom: solid 1px white;
+    min-height: 100vh;
     display: flex;
-    justify-content: space-between;
-    padding-bottom: 20px;
+    justify-content: center;
+    position: relative;
 }
 
-#formTitle {
-    text-transform: uppercase;
+#formFlex {
+    max-width: 900px;
+    width: 100%;
+    height: 100vh;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#formInfo {
+    width: calc(100% - 550px);
+    height: 100%;
+    /* background-color: red; */
+    color: white;
+}
+
+#formInfoTitle {
+    font-size: 32px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+#formInfoSub {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.contactFlex {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#contactIcon {
+    color: white;
+    width: 32px;
+}
+
+.contact {
+    margin-left: 20px;
+    font-size: 18px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+#formInputs {
+    /* background-color: white; */
+    height: 100%;
+    width: 510px;
+    margin-left: 40px;
+}
+
+.inputTitle {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.formInputArea {
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    background-color: white;
+    border: solid 1px gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.formInput {
+    width: 98%;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+#submitFormBtn {
+    width: 100%;
+    height: 40px;
+    background-color: #056BAB;
+    border: solid 1px #056BAB;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
     font-family: 'Space Grotesk', sans-serif;
-    font-weight: 500;
-    font-size: 65px;
-    /* max-width: 80vw; */
-    text-align: center;
-    line-height: 1.2;
-}
-
-#formSubTitle {
-    width: 50%;
-    color: white;
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.2;
-}
-
-#formArea {
-    margin-top: 20px;
-    margin-left: 8%;
-}
-
-@media only screen and (max-width: 1200px) {
-    #formTitleArea {
-        display: block;
-        padding-bottom: 20px;
-    }
-
-    #formTitle {
-        font-size: 45px;
-    }
-
-    #formSubTitle {
-        text-align: center;
-        width: 100%;
-        margin-top: 20px;
-    }
-
-    #formArea {
-        margin-top: 20px;
-        margin-left: 0;
-    }
-
-    #googleForm {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    #formSection {
-        padding-top: 40px;
-    }
-
-    #formTitle {
-        font-size: 32px;
-    }
-
-    #formSubTitle {
-        font-size: 14px;
-        margin-top: 10px;
-    }
+    cursor: pointer;
+    margin-top: 40px;
 }
