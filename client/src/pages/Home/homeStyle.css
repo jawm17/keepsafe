@@ -65,6 +65,7 @@
     align-items: center;
     font-family: 'Work Sans', sans-serif;
     cursor: pointer;
+    border-radius: 4px;
 }
 
 #headerScrolled #headerActNowBtn {
@@ -243,6 +244,7 @@
     align-items: center;
     font-family: 'Work Sans', sans-serif;
     cursor: pointer;
+    border-radius: 4px;
 }
 
 #heroBtn:hover #actNowArrow {
