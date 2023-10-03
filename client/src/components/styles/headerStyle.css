@@ -159,16 +159,6 @@
     transition: all 0.2s ease-out;
 }
 
-/* #dropDownMenu {
-    width: 100vw;
-    height: 100%;
-    background-color: red;
-    position: fixed;
-    top: -100%;
-    left: 0px;
-    z-index: 1;
-} */
-
 #dropDownMenuOpen {
     width: 100vw;
     position: fixed;
@@ -230,3 +220,4 @@
     #actNowBtn {
         display: none;
     }
+}
