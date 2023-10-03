@@ -213,60 +213,9 @@ footer{
       text-transform: uppercase;
       font-weight: 600;
   }
-  #contactBtn p span{
-    margin-left: 10px;
-    /* border: white 2px solid; */
-    border-radius: 100%;
-    padding: 4.5px 5px;
-  }
-  /* Social icons */
-  #lab_social_icon_footer{
-      display: flex;
-      justify-content: center;
-      padding-left: 20px;
-    }
   #lab_social_icon_footer .social{
       width: 30px;
     }
-    
-    #lab_social_icon_footer a {
-      color: #333;
-    }
-    
-    #lab_social_icon_footer .social:hover {
-      -webkit-transform: scale(1.1);
-      -moz-transform: scale(1.1);
-      -o-transform: scale(1.1);
-    }
-    
-    #lab_social_icon_footer .social {
-      -webkit-transform: scale(0.8);
-      /* Browser Variations: */
-      
-      -moz-transform: scale(0.8);
-      -o-transform: scale(0.8);
-      -webkit-transition-duration: 0.5s;
-      -moz-transition-duration: 0.5s;
-      -o-transition-duration: 0.5s;
-    }
-    /*
-        Multicoloured Hover Variations
-    */
-    
-    #lab_social_icon_footer #social-fb:hover {
-      fill: #3B5998;
-    }
-    
-    #lab_social_icon_footer #social-tw:hover {
-      fill: #4099FF;
-    }
-    
-    #lab_social_icon_footer #social-gp:hover {
-      fill: #d34836;
-    }
-    
-    #lab_social_icon_footer #social-em:hover {
-      fill: #f39c12;
-    }
+
   
 }
