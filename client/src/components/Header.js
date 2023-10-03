@@ -26,7 +26,9 @@ export default function Header() {
         <div>
             <div className={`headerNavbar ${scrolled || menuOpen ? 'scrolled' : ''}`}>
                 <div id="headerInner">
-                    <img src="https://testsiterd.kinsta.cloud/wp-content/uploads/2023/04/footer-experiment-Keep-Round-Rock-Safe-04.png"id="logoHeader" onClick={() => window.location.reload()}></img>
+                    <div id="logoHeader" onClick={() => window.location.reload()}>
+                    {/* <img src="https://testsiterd.kinsta.cloud/wp-content/uploads/2023/04/footer-experiment-Keep-Round-Rock-Safe-04.png"></img> */}
+                        </div>
                     <div id="headerBtnArea">
                         <div className="headerBtn" onClick={() => window.location.reload()}>
                             home

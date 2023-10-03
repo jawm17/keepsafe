@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-// import "./styles/actionStyle.css";
+import "./styles/actionStyle.css";
 
 
 
@@ -7,28 +7,28 @@ export default function Action() {
     const location = "Round Rock";
 
     return (
-        <section id="actionSection">
-        <div id="actionImgFlex">
-          <img
-            id="largeLogo"
-            src="https://testsiterd.kinsta.cloud/wp-content/uploads/2023/04/Keep-Round-Rock-Safe-02-smaller-1.png"
-          ></img>
-        </div>
-        <div id="actionTitle">What can be done?</div>
-        <div id="actionSubTitle">
-          We are requesting common sense sign rule updates that benefit all
-          businesses and not just the big companies that come in from out of
-          town. New rules will ensure new EMC signs are built in an attractive
-          way, promote the city and its branding, and prevent sign clutter and
-          proliferation, all at zero expense to {location} taxpayers.
-        </div>
-        <div id="actionSubTitle">
-          Let {location} city leaders know that a modern city deserves modern
-          sign regulations.
-        </div>
-        <div id="actionSubTitle2">
-          Join your neighbors and sign the petition today!
-        </div>
+        <section id='actionSection'>
+            <div id="actionTitle">What can be done?</div>
+            <div className='divs-container'>
+            <div className='div-item'>
+  <h2>Electronic Message Center (EMC) Signs:</h2>
+  <p>EMC signs are endorsed for boosting economic growth, public safety, and emergency responsiveness in high-traffic areas of I-35 and SH-45.</p>
+</div>
+<div className='div-item'>
+  <h2>Modernized Sign Regulations:</h2>
+  <p>The coalition advocates for updated sign rules serving all businesses, ensuring attractive and brand-consistent EMC signs without extra taxpayer cost.</p>
+</div>
+<div className='div-item'>
+  <h2>Economic Benefits:</h2>
+  <p>The Perryman report notes that digital billboards can significantly boost the economy, contributing $700,000 in gross product during construction and $19.1 million annually once operational.</p>
+</div>
+<div className='div-item'>
+  <h2>Safety Measures:</h2>
+  <p>EMC signs can broadcast crucial alerts and emergency communications swiftly, providing timely warnings to citizens.</p>
+</div>
+
+            </div>
+
         </section>
     );
 }

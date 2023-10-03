@@ -1,34 +1,28 @@
 /* faq section ======================================================================= */
-.faq-section {
-    padding: 400px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* faq section ======================================================================= */
 #faqSection {
-    padding: 0 200px ;
+    padding: 0 200px;
     /* width: 100vw; */
-    background-color: #001566;
+    /* background-color: #001566; */
     padding-bottom: 80px;
 }
 
 #faqTitle {
-    color: white;
+    color: var(--textColor);
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 500;
     font-size: 75px;
     text-align: center;
     line-height: 1.2;
-    padding-top: 40px;
+    padding-bottom: 50px;
 }
 
 .questionBox {
     /* width: 100%; */
     /* margin-left: 10%; */
+    border-radius: 10px;
+
     background-color: white;
-    min-height: 45px;
+    min-height:45px;
     margin-top: 40px;
     cursor: pointer;
     transition: all 0.2s ease-out;
@@ -44,7 +38,7 @@
     min-height: 45px;
     display: flex;
     align-items: center;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.4;
 }
 
@@ -52,7 +46,7 @@
     font-family: 'Open Sans', sans-serif;
     margin-top: 15px;
     margin-bottom: 15px;
-    color: rgb(37, 37, 37);
+    color: rgb(71, 70, 70);
     font-size: 16px;
     display: none;
     line-height: 1.4;
@@ -77,12 +71,18 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    background-color: var(--textColor);
+    padding-left: 40px;
+    padding-bottom: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+
 }
 
 .faqColumn {
     width: 100%; /* On mobile, each column takes full width */
     box-sizing: border-box;
-    padding: 0; /* Optional padding for better spacing on mobile */
+    padding:0; /* Optional padding for better spacing on mobile */
 }
 
 @media only screen and (max-width: 800px) {

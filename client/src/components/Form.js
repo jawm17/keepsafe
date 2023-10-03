@@ -1,10 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./styles/formStyle.css";
 
-
-
 export default function Form() {
-    const location = "Round Rock";
+  
 
     return (
         <section id="formSection">
