@@ -2,7 +2,19 @@
     font-family: 'WorkSans';
     src: url('../../assets/Work_Sans/WorkSans-VariableFont_wght.ttf');
 }
-
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('../../assets/SourceSansPro/SourceSansPro-Light.ttf');
+}
+:root {
+    --small-spacing: 16px;
+    --medium-spacing: 48px;
+    --large-spacing: 80px;
+    
+    --main-header-padding: 15px;
+    --sub-header-padding: 10px;
+    --paragraph-padding: 5px;
+  }
 
 
 /* HEADER ======================================================= */
@@ -321,46 +333,57 @@
 #section1 {
     background-color: #FFFFFF;
     width: 100vw;
-    padding-bottom: 120px;
-    /* height: 100vh; */
+    padding-top: var(--large-spacing);
+    padding-bottom: var(--large-spacing);
+        /* height: 100vh; */
 }
 
 #section1Flex {
-    display: flex;
-    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
 }
 
 #section1Area {
     width: 95%;
-    max-width: 900px;
-    /* background-color: red; */
-    font-family: 'Work Sans', sans-serif;
+
 }
 
 #section1TopText {
     color: gray;
-    font-size: 22px;
-    margin-top: 80px;
+    font-size: 16px;
+    font-family: 'WorkSans';
+    font-weight: 500;
+    text-transform: uppercase;
+    /* margin-top: 80px; */
     /* text-decoration: solid 1px black; */
 }
 
 #section1HeaderText {
-    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     font-weight: 400;
-    font-size: 40px;
-    line-height: 45px;
+    font-size: 48px;
+    font-family: 'WorkSans';
+    text-transform: capitalize;
+    line-height: 1.2;
+
 }
 
 #section1SubText {
-    margin-top: 20px;
-    font-size: 22px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 1.8;
+
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'SourceSansPro';
 }
 
 #section1ImgFlex {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 85px;
+    margin-top: 48px;
 }
 
 #section1ImgArea {
@@ -399,14 +422,15 @@
 .highlightFade {
     width: 100%;
     height: 80px;
-    background-image: linear-gradient(to top, rgba(243, 244, 245, 0), #14171a);
+    background-image: linear-gradient(to top, rgba(243, 244, 245, 0) 0%, #14171ad1 80%);
 }
 
 .highlightTitle {
+    text-transform: capitalize;
     color: white;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'WorkSans';
     padding: 20px;
-    font-size: 22px;
+    font-size: 24px;
 }
 
 .learnMoreHighlight {
@@ -422,8 +446,10 @@
     color: white;
     padding-left: 20px;
     padding-right: 20px;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'SourceSansPro';
     margin-top: 45px;
+    font-size: 18px;
+
 }
 
 .learnMoreBtn {

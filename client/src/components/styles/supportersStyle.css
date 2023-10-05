@@ -18,6 +18,8 @@
 }
 
 #outerContainerSup {
+  padding-top: var(--medium-spacing);
+  padding-bottom: var(--medium-spacing);
   display: grid;
   align-content: center;
   overflow: hidden;
@@ -48,8 +50,8 @@
   gap: var(--gap);
   mask-image: linear-gradient(var(--mask-direction, to right),
       hsl(0 0% 0% / 0),
-      hsl(0 0% 0% / 1) 10%,
-      hsl(0 0% 0% / 1) 90%,
+      hsl(0 0% 0% / 1) 15%,
+      hsl(0 0% 0% / 1) 85%,
       hsl(0 0% 0% / 0));
 }
 
@@ -91,7 +93,6 @@
   from {
     transform: translateX(var(--scroll-start));
   }
-
   to {
     transform: translateX(var(--scroll-end));
   }
@@ -101,7 +102,6 @@
   from {
     transform: translateY(var(--scroll-start));
   }
-
   to {
     transform: translateY(var(--scroll-end));
   }

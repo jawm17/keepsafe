@@ -1,8 +1,8 @@
 #faqSection {
   width: 100vw;
   /* background-color: var(--blue); */
-  padding-top: 0px;
-  padding-bottom: 50px;
+  padding-top: var(--medium-spacing);
+  padding-bottom: var(--medium-spacing);
 }
 
 #faqFlex {
@@ -11,7 +11,7 @@
 }
 
 #faqSection h1 {
-  font-size: 36px;
+  font-size: 48px;
   color: black;
   font-family: 'Work Sans', sans-serif;
   text-align: center;

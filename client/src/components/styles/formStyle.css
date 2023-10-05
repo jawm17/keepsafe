@@ -1,5 +1,7 @@
 /* form section ======================================================================= */
 #formSection {
+    padding-top: var(--medium-spacing);
+    padding-bottom: var(--medium-spacing);
     max-width: 1350px;
     padding-left: 150px;
     padding-right: 150px;
