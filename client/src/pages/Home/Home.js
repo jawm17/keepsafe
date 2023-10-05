@@ -111,8 +111,7 @@ export default function Home() {
                 </video> */}
                 <img id="heroMedia" src="https://testsiterd.kinsta.cloud/wp-content/uploads/2023/04/Background.png"></img>
             </div>
-            <Supporters/>
-
+          
             <div id="section1">
                 <div id="section1Flex">
                     <div id="section1Area">
@@ -201,10 +200,14 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            {/* <Supporters/> */}
-            <FAQComp/>
+  
+
             {/* Form */}
+
+            <FAQComp/>
             <Form/>
+            {/* <Supporters/> */}
+          <Supporters/>
             {/* Footer */}
             <Footer/>
         </div>

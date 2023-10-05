@@ -1,22 +1,8 @@
-#outerContainerSup{
-    display: grid;
-    align-content: center;
-    overflow: hidden;
-    gap: var(--gap);
-    width: 100%;
-    min-height: 50vh;
-    font-family: system-ui, sans-serif;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: var(--color-text);
-    /* background-color: var(--color-bg); */
-}
-
 :root {
   --color-text: navy;
   --color-bg: papayawhip;
   --color-bg-accent: #ecdcc0;
-  --size: clamp(10rem, 05rem + 20vmin, 50rem);
+  --size: clamp(10rem, 05rem + 15vmin, 50rem);
   --gap: calc(var(--size) / 18);
   --duration: 20s;
   --scroll-start: 0;
@@ -31,19 +17,40 @@
   }
 }
 
+#outerContainerSup {
+  display: grid;
+  align-content: center;
+  overflow: hidden;
+  gap: var(--gap);
+  width: 100%;
+  min-height: 40vh;
+  font-family: system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--color-text);
+  /* background-color: var(--color-bg); */
+}
+
+#outerContainerSup h1 {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.678);
+  font-size: 25px;
+  font-weight: 600;
+  font-family: 'WorkSans';
+
+
+}
 
 .marquee {
   display: flex;
-  overflow: hidden;  
+  overflow: hidden;
   user-select: none;
   gap: var(--gap);
-  mask-image: linear-gradient(
-    var(--mask-direction, to right),
-    hsl(0 0% 0% / 0),
-    hsl(0 0% 0% / 1) 10%,
-    hsl(0 0% 0% / 1) 90%,
-    hsl(0 0% 0% / 0)
-  );
+  mask-image: linear-gradient(var(--mask-direction, to right),
+      hsl(0 0% 0% / 0),
+      hsl(0 0% 0% / 1) 10%,
+      hsl(0 0% 0% / 1) 90%,
+      hsl(0 0% 0% / 0));
 }
 
 .marquee__group {
@@ -84,6 +91,7 @@
   from {
     transform: translateX(var(--scroll-start));
   }
+
   to {
     transform: translateX(var(--scroll-end));
   }
@@ -93,6 +101,7 @@
   from {
     transform: translateY(var(--scroll-start));
   }
+
   to {
     transform: translateY(var(--scroll-end));
   }
@@ -193,4 +202,3 @@
     visibility: hidden;
   }
 }
-

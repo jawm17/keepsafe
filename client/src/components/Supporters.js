@@ -10,6 +10,7 @@ const Supporters = () => {
 
   return (
     <div id="outerContainerSup">
+      <h1>TRUSTED BY</h1>
 <article className="wrapper">
     <div className="marquee">
       <div className="marquee__group">
