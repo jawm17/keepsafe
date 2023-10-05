@@ -1,85 +1,59 @@
 import React, { useState } from 'react';
 import './styles/FAQstyle.css';
-import ArrowIcon from './ArrowIcon';
 
-export default function FAQComp() {
-    const location = "Round Rock";
-    const [selectedQuestion, setSelectedQuestion] = useState(null);
+const FAQComp = () => {
+  const [selected, setSelected] = useState(null);
+  const [answer, setAnswer] = useState(null);
 
-    const faqs = [
-        {
-            question: `What changes are being proposed for ${location}'s sign regulations?`,
-            answer: `We are advocating for common sense sign rule updates, restricted to specific areas of I-35 and SH-45 only, that serve all businesses, including local ones and not just large out-of-town companies. These updates aim to ensure that new EMC signs are constructed attractively, resonate with the city’s branding, and avoid unnecessary clutter. Best of all, these changes come at no extra cost to Round Rock taxpayers.`
-        },
-        {
-            question: `Why are these sign rule updates essential for ${location}?`,
-            answer: `Round Rock is a modern city, and it deserves sign regulations that reflect its evolving nature. Updated rules will promote a cohesive city branding, benefit businesses of all sizes, and prevent the cityscape from being overwhelmed by signs.`
-        },
-        {
-            question: `Are these changes going to be costly for ${location} taxpayers?`,
-            answer: `No, the proposed sign rule updates are designed to be implemented at zero additional expense to the taxpayers of Round Rock.`
-        },
-        {
-            question: `How do the new rules for signs benefit the ${location} local economy?`,
-            answer: `The Perryman Group report highlights the substantial economic benefits of typical digital billboards in Round Rock. For instance, during the construction phase, a billboard can contribute to $700,000 in gross product and support 7 job-years. Once fully operational, it can lead to an impressive $19.1 million in gross product each year and create 251 jobs. This increase in economic activity and job creation will support more sales tax revenue, business opportunities, and expansions.`
-        },
-        {
-            question: `How much in revenue can the city of ${location} expect from these new digital signs?`,
-            answer: `The Perryman Group report highlights the substantial economic benefits of typical digital billboards in Round Rock. For instance, during the construction phase, a billboard can contribute $700,000 in gross product and support 7 job-years. Once fully operational, it can lead to an impressive $19.1 million in gross product each year and create 251 jobs. This increase in economic activity and job creation will support more sales tax revenue, business opportunities, and expansions.`
-        },
-        {
-            question: `How will the new signs ensure the safety of ${location} citizens?`,
-            answer: `EMC digital signs, integral to these new rules, can be programmed remotely. They can swiftly broadcast essential information such as weather alerts, Amber alerts, Silver alerts, and emergency communications from fire and police officials. This ensures that citizens and their properties receive timely warnings and updates.`
-        },
-        // ... Add other questions and answers here up to 12
-    ];
+  const questions = [
+    { q: "What changes are being proposed for Round Rock's sign regulations?", a: "We are advocating for common sense sign rule updates, restricted to specific areas of I-35 and SH-45 only, that serve all businesses, including local ones and not just large out-of-town companies. These updates aim to ensure that new EMC signs are constructed attractively, resonate with the city’s branding, and avoid unnecessary clutter. Best of all, these changes come at no extra cost to Round Rock taxpayers." },
+    { q: "Why are these sign rule updates essential for Round Rock?", a: "Round Rock is a modern city, and it deserves sign regulations that reflect its evolving nature. Updated rules will promote a cohesive city branding, benefit businesses of all sizes, and prevent the cityscape from being overwhelmed by signs." },
+    { q: "Are these changes going to be costly for Round Rock taxpayers?", a: "No, the proposed sign rule updates are designed to be implemented at zero additional expense to the taxpayers of Round Rock." },
+    { q: "How do the new rules for signs benefit the Round Rock local economy?", a: "The Perryman Group report highlights the substantial economic benefits of typical digital billboards in Round Rock. For instance, during the construction phase, a billboard can contribute to $700,000 in gross product and support 7 job-years. Once fully operational, it can lead to an impressive $19.1 million in gross product each year and create 251 jobs. This increase in economic activity and job creation will support more sales tax revenue, business opportunities, and expansions." },
+    { q: "How much in revenue can the city of Round Rock expect from these new digital signs?", a: "The Perryman Group report highlights the substantial economic benefits of typical digital billboards in Round Rock. For instance, during the construction phase, a billboard can contribute $700,000 in gross product and support 7 job-years. Once fully operational, it can lead to an impressive $19.1 million in gross product each year and create 251 jobs. This increase in economic activity and job creation will support more sales tax revenue, business opportunities, and expansions." },
+    { q: "How will the new signs ensure the safety of Round Rock citizens?", a: "EMC digital signs, integral to these new rules, can be programmed remotely. They can swiftly broadcast essential information such as weather alerts, Amber alerts, Silver alerts, and emergency communications from fire and police officials. This ensures that citizens and their properties receive timely warnings and updates." },
+    { q: "How do the new rules promote fairness in advertising?", a: "Some cities have sign monopolies, which can lead to inflated advertising costs due to limited availability. With our new rules, each EMC sign operates similarly to 16 traditional signs. This increase in advertising space supply is intended to keep advertisement prices more affordable and fair for all businesses." },
+    { q: "Will the new rules affect property rights?", a: "The new sign rules respect and even enhance property rights. Property owners will have the freedom to lease their land for sign placements, generating potential rental income. This can open new financial avenues for landowners and their families." },
+    { q: "What are the projected economic benefits of digital billboards in Round Rock as per a credible source?", a: "According to the Perryman Group report, a typical digital billboard in Round Rock can yield a gross product of $700,000 and support 7 job-years during its construction. Once it’s fully operational, it’s estimated to contribute $19.1 million in gross product annually and support 251 jobs." },
+    { q: "How can I support these proposed sign rule updates?", a: "Join the movement! Let the Round Rock city leaders know your stance. We have a petition available for signing—stand with your neighbors in advocating for a modern approach to sign regulations in our city." },
+  ];
 
-    const leftFaqs = faqs.slice(0, 3);
-    const rightFaqs = faqs.slice(3);
+  const FaqItem = ({ item, index }) => {
+    const [open, setOpen] = useState(false);
 
     return (
-        <div id="faqSection">
-            <div id="faqTitle">FAQ</div>
-            <div className="faqColumns">
-                <div className="faqColumn">
-                    {leftFaqs.map((faq, index) => (
-                        <FAQItem
-                            key={index}
-                            index={index}
-                            faq={faq}
-                            location={location}
-                            selectedQuestion={selectedQuestion}
-                            setSelectedQuestion={setSelectedQuestion}
-                        />
-                    ))}
-                </div>
-                <div className="faqColumn">
-                    {rightFaqs.map((faq, index) => (
-                        <FAQItem
-                            key={index + 6} // To ensure unique keys
-                            index={index + 6}
-                            faq={faq}
-                            location={location}
-                            selectedQuestion={selectedQuestion}
-                            setSelectedQuestion={setSelectedQuestion}
-                        />
-                    ))}
-                </div>
-            </div>
-        </div>
-    );
-}
+      <div
+        className={`faqItem ${open ? "selectedQ" : "null"}`}
+        onClick={() => setOpen(!open)}
+      >
+        <div className="questionTop">
+          <div id="questionIcon" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            +
+          </div>
 
-function FAQItem({ index, faq, location, selectedQuestion, setSelectedQuestion }) {
-    return (
-        <div
-            className="questionBox"
-            onClick={() => setSelectedQuestion(index === selectedQuestion ? null : index)}
-            id={selectedQuestion === index ? "selectedQuestion" : null}
-        >
-            <div className="question">Q: {faq.question}</div>
-            <div className="answer">A: {faq.answer}</div>
-            <ArrowIcon />
+          <div className="question">
+            {item.q}
+          </div>
         </div>
+        <div className="answer">
+          {open && item.a}
+        </div>
+      </div>
     );
-}
+  };
+
+  return (
+    <div id="faqSection">
+      <h1>Frequently Asked Questions</h1>
+      <div id="faqFlex">
+        <div className="faq-container">
+          {questions.map((item, index) => (
+            <FaqItem item={item} index={index} key={index} />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default FAQComp;

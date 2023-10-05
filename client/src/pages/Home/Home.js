@@ -6,6 +6,8 @@ import "./homeStyle.css";
 // Comps 
 import Footer from "../../components/Footer"
 import Form from "../../components/Form"
+import FAQComp from "../../components/FAQComp"
+import Supporters from "../../components/Supporters";
 
 export default function Home() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -198,11 +200,9 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div id="section2">
-                <div id="faqBox">
-
-                </div>
-            </div>
+            {/* <Supporters/> */}
+            <FAQComp/>
+            <Supporters/>
             {/* Form */}
             <Form />
             {/* Footer */}

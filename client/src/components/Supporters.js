@@ -1,19 +1,53 @@
-import React, { useEffect, useState } from "react";
-import "./styles/supportersStyle.css";
+import React, { useEffect, useRef } from 'react';
+import './styles/supportersStyle.css';
+
+// svg
+import LevelSvg from "../assets/levelSvg.svg"
+import AustIndia from "../assets/AustIndia.svg"
+
+const Supporters = () => {
 
 
+  return (
+    <div id="outerContainerSup">
+<article className="wrapper">
+    <div className="marquee">
+      <div className="marquee__group">
+        <img src={LevelSvg}/>
+        <img src={AustIndia}/>
+        <img src={LevelSvg}/>
+        <img src={AustIndia}/>
+        <img src={AustIndia}/>
+      </div>
+      <div aria-hidden="true" className="marquee__group">
+      <img src={LevelSvg}/>
+      <img src={AustIndia}/>
+      <img src={LevelSvg}/>
+      <img src={AustIndia}/>
+      <img src={AustIndia}/>
+      </div>
+    </div>
+    <div className="marquee marquee--reverse">
+      <div className="marquee__group">
+      <img src={LevelSvg}/>
+      <img src={AustIndia}/>
+      <img src={LevelSvg}/>
+      <img src={AustIndia}/>
+      <img src={AustIndia}/>
+      </div>
+      <div aria-hidden="true" className="marquee__group">
+      <img src={LevelSvg}/>
+      <img src={AustIndia}/>
+      <img src={LevelSvg}/>
+      <img src={AustIndia}/>
+      <img src={AustIndia}/>
 
-export default function Supporters() {
-    return (
-        <section id="supportersSection">
-          <h1 id="supportersTitle">Trusted By</h1>
-          <div id="companyIcons">
-          <img id="gImg" src="https://testsiterd.kinsta.cloud/wp-content/uploads/2023/04/logo_gino-s-1920w.webp"/>
-          <img src="https://testsiterd.kinsta.cloud/wp-content/uploads/2023/04/warpath-pizza-300x300.png"/>
-          <img src="https://testsiterd.kinsta.cloud/wp-content/uploads/2023/04/urban-rooftop-logo-stacked-white-logo-300x160.png"/>
-          <img src="https://testsiterd.kinsta.cloud/wp-content/uploads/2023/04/finleys-rr-logo-white@2x.png"/>
-          <img src="https://testsiterd.kinsta.cloud/wp-content/uploads/2023/04/centro-logo-500-01-300x75.png"/>
-          </div>
-        </section>
-    );
-}
+      </div>
+    </div>
+  </article>
+
+ </div>
+  );
+};
+
+export default Supporters;

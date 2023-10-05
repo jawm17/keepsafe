@@ -59,7 +59,7 @@
 }
 
 .inputTitle {
-    width: 80%;
+    width: 90%;
     text-align: left;
     font-family: 'Space Grotesk', sans-serif;
     font-size: 18px;
@@ -69,7 +69,7 @@
 
 .formInputArea {
     height: 50px;
-    width: 80%;
+    width: 90%;
     background-color: white;
     border: solid 1px gray;
     display: flex;
@@ -85,7 +85,7 @@
 }
 
 #submitFormBtn {
-    width: 80%;
+    width: 90%;
     
     height: 35px;
     background-color: red;
