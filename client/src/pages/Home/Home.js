@@ -199,21 +199,14 @@ export default function Home() {
                 </div>
             </div>
             <div id="section2">
-                <div id="section2Area">
-                    <div id="supportersLeft">
-                        <div id="supportersTitle">
-                            Our Supporters
-                        </div>
-                    </div>
-                    <div id="supportersRight">
+                <div id="faqBox">
 
-                    </div>
                 </div>
             </div>
             {/* Form */}
-            <Form/>
+            <Form />
             {/* Footer */}
-            <Footer/>
+            <Footer />
         </div>
     );
 }

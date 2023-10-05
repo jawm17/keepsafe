@@ -555,38 +555,14 @@
     background-color: var(--blue);
     display: flex;
     justify-content: center;
-}
-
-#section2Area {
-    width: 95%;
-    max-width: 1200px;
-    margin-top: 45px;
-    display: flex;
-}
-
-#supportersTitle {
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 600;
-    color: white;
-    font-size: 45px;
-}
-
-#supportersLeft {
-    width: 450px;
-}
-
-#supportersRight {
-    width: calc(100% - 200px);
-    height: 200vh;
-    /* background-color: red; */
-}
-
-#supportersTitle {
-    position: sticky;
-    position: -webkit-sticky;
-    top: 100px;
+    align-items: center;
 }
 
 #faqBox {
-box-shadow: rgba(0, 0, 0, 0.157) 0px 0.602187px 0.602187px -1.08333px, rgba(0, 0, 0, 0.145) 0px 2.28853px 2.28853px -2.16667px, rgba(0, 0, 0, 0.086) 0px 10px 10px -3.25px;
+    width: 95%;
+    max-width: 900px;
+    height: 600px;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 8px;
 }
