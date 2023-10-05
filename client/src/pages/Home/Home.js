@@ -111,7 +111,6 @@ export default function Home() {
                 </video> */}
                 <img id="heroMedia" src="https://testsiterd.kinsta.cloud/wp-content/uploads/2023/04/Background.png"></img>
             </div>
-
             <div id="section1">
                 <div id="section1Flex">
                     <div id="section1Area">

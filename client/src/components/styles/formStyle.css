@@ -1,139 +1,141 @@
 /* form section ======================================================================= */
 #formSection {
-    padding: 100px 350px;
-    background-color: #001566;
-    scroll-margin: 80px;
-}
-#formFlex {
-    display: flex;
-}
-#formFlex > div{
-    flex: 1;
-}
-
-#formInfo {
-    color: white;
-}
-
-#formInfoTitle {
-    font-size: 42px;
-    padding-bottom: 20px;
+    max-width: 1350px;
+    padding-left: 150px;
+    padding-right: 150px;
     font-family: 'WorkSans';
-    font-weight: 400;
-}
 
-#formInfoSub {
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 1.8;
-    padding-bottom: 20px;
-    
-    width: 75%;
-    font-family: 'WorkSans';
 }
-
-.contactFlex {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
+@media only screen and (max-width: 800px) {
+    #formSection{
+        padding-left: 0px;
+        padding-right: 0px;
+        }
     
 }
-
-#contactIcon {
-    color: white;
-    width: 32px;
+#formContainer {
+    display: flex;
 }
-
-.contact {
-    font-weight: 400;
-    margin-left: 20px;
-    font-size: 18px;
-    font-family: 'WorkSans';
+@media only screen and (max-width: 800px) {
+    #formContainer{
+       padding:  0px 5px;
+    }
     
 }
+#formImgDiv{
+    z-index: 3;
+    width: 55%;
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(https://testsiterd.kinsta.cloud/wp-content/uploads/2023/04/round-rock-image.jpg);
+    /* background-position: 0 0, 50%; */
+    background-repeat: repeat, repeat;
+    background-size: auto, cover;
+    position: relative;
+}
 
-#formInputs {
-    display: flex;
+@media only screen and (max-width: 800px) {
+    #formImgDiv{
+       display: none;
+    }
+    
+}
+#formContent{
+    z-index: 4;
+    width: 45%;
+    min-height: 800px;
     flex-direction: column;
-    align-items: flex-end;
-}
-
-.inputTitle {
-    width: 90%;
-    text-align: left;
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 18px;
-    padding-bottom: 10px;
-    color: white;
-}
-
-.formInputArea {
-    height: 50px;
-    width: 90%;
-    background-color: white;
-    border: solid 1px gray;
-    display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
-}
-#messageImput{
-    height: 115px;
-}
-.formInput {
-    font-family: 'Space Grotesk', sans-serif;
-}
-
-#submitFormBtn {
-    width: 90%;
-    
-    height: 35px;
-    background-color: red;
-    text-transform: uppercase;
-    /* border: solid 1px #056BAB; */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-family: 'Space Grotesk', sans-serif;
-    cursor: pointer;
-    margin-top: 20px;
+    position: relative;
 }
-
-@media screen and (max-width: 768px) {
-    #formSection {
-        padding: 50px 50px;
-        background-color: #001566;
-        scroll-margin: 80px;
-    }
-    #formInfoSub {
-        font-size: 16px;
-        font-weight: 300;
-        line-height: 1.8;
-        padding-bottom: 20px;
+@media only screen and (max-width: 800px) {
+    #formContent{
+        width: calc(100% - 100px);
+        margin: auto;
         
-        width: 90%;
-        font-family: 'WorkSans';
-    }
-    #formFlex {
-        gap: 25px;
-        flex-direction: column;
-    }
-    .inputTitle {
-        width: 100%;
-        font-size: 16px;
-        padding-top: 10px;
+
+        }
+    
+}
+#formWrap{
+    max-width: 550px;
+    min-width: 520px;
+    background-color: #fff;
+    position: relative;
+    box-shadow: 0 0 50px rgba(0, 0, 0, .15);
+    margin-left: -36px; 
+    padding: 50px;
+}
+@media only screen and (max-width: 800px) {
+    #formWrap{
+        margin-left: 0px; 
+        min-width: 100%;
+        padding: 25px;
     }
     
-    .formInputArea {
-        height: 40px;
-        width: 100%;
-    }
-    #messageImput{
-        height: 100px;
-    }
+}
+#formContent h3{
+    text-align: center;
+    font-size: 35px;
+    color: #222;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'WorkSans';
+    font-weight: 500;
+    line-height: 1.2em;
+}
+#form{
+    grid-column-gap: 10px;
+    flex-flow: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+    display: flex;
+}
+.textField {
+    font-size: 14px;
 
-#submitFormBtn {
+    height: 33px;
+    margin-bottom: 10px;
+    min-width: 43%;
+    background-color: rgba(34, 54, 69, .05);
+    border: 1px rgba(34, 54, 69, .05);
+    padding: 15px 13px;
+}
+@media only screen and (max-width: 800px) {
+    .textField{
+        min-width: calc(100% - 26px);
+    }
+    #formContent h3{
+        text-align: center;
+        font-size: 30px;
+    }
+    
+}
+#textArea {
+    min-height: 130px;
+    background-color: rgba(34, 54, 69, .05);
+    border: 1px rgba(34, 54, 69, .05);
+    padding: 16px 18px;
+    width: 100%;
+    font-size: 14px;
+    font-family: 'WorkSans';
+
+}
+#btnFormContainer{
     width: 100%;
 }
+#buttonForm {
+    width: calc(100% - 80px);
+    background-color: var(--blue);
+    text-transform: uppercase;
+    justify-content: center;
+    margin: 40px 0;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.15;
+    padding: 20px 40px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+
 }
