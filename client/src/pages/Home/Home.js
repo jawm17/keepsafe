@@ -31,22 +31,22 @@ export default function Home() {
     return (
         <div>
             <div id={scrolled || menuOpen ? "headerScrolled" : "headerInitial"}>
-                <img id="headerLogo" src={LogoPng}></img>
+                <img id="headerLogo" src={LogoPng} onClick={() => scroll("heroSection")}></img>
                 <div id="headerBtnArea">
-                    <div className="headerBtn" onClick={() => window.location.reload()}>
+                    <div className="headerBtn" onClick={() => scroll("heroSection")}>
                         home
                     </div>
-                    <div className="headerBtn" onClick={() => scroll("actionSection")}>
-                        solutions
+                    <div className="headerBtn" onClick={() => scroll("section1")}>
+                        about
                     </div>
-                    <div className="headerBtn" onClick={() => scroll("supportersSection")}>
+                    <div className="headerBtn" onClick={() => scroll("section2")}>
                         supporters
                     </div>
                     <div className="headerBtn" onClick={() => scroll("formSection")}>
                         contact
                     </div>
                 </div>
-                <div id="headerActNowBtn">
+                <div id="headerActNowBtn" onClick={() => scroll("formSection")}>
                     act now
                 </div>
                 <svg onClick={() => setMenuOpen(!menuOpen)} id="menuBtn" style={menuOpen ? { display: "none" } : null} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -58,13 +58,13 @@ export default function Home() {
             </div>
             <div id={menuOpen ? "dropDownMenuOpen" : "dropDownMenu"} className="dropDownMenu">
                 <div id="menuOptionArea">
-                    <div className="menuOption" onClick={() => window.location.reload()}>
+                    <div className="menuOption" onClick={() => scroll("heroSection")}>
                         home
                     </div>
-                    <div className="menuOption" onClick={() => scroll("actionSection")}>
-                        solutions
+                    <div className="menuOption" onClick={() => scroll("section1")}>
+                        about
                     </div>
-                    <div className="menuOption" onClick={() => scroll("supportersSection")}>
+                    <div className="menuOption" onClick={() => scroll("section2")}>
                         supporters
                     </div>
                     <div className="menuOption" onClick={() => scroll("formSection")}>
@@ -88,7 +88,7 @@ export default function Home() {
                             Building Value at the Intersection of <mark id="boldHeroText">Law, Business and Community</mark>
                         </div>
                         <div id="heroBtnFlex">
-                            <div id="heroBtn" onClick={() => alert("ok")}>
+                            <div id="heroBtn" onClick={() => scroll("formSection")}>
                                 <div>
                                     support
                                 </div>
