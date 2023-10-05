@@ -6,6 +6,8 @@ import "./homeStyle.css";
 // Comps 
 import Footer from "../../components/Footer"
 import Form from "../../components/Form"
+import FAQComp from "../../components/FAQComp"
+import Supporters from "../../components/Supporters";
 
 export default function Home() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -109,6 +111,7 @@ export default function Home() {
                 </video> */}
                 <img id="heroMedia" src="https://testsiterd.kinsta.cloud/wp-content/uploads/2023/04/Background.png"></img>
             </div>
+            <Supporters/>
 
             <div id="section1">
                 <div id="section1Flex">
@@ -198,18 +201,8 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div id="section2">
-                <div id="section2Area">
-                    <div id="supportersLeft">
-                        <div id="supportersTitle">
-                            Our Supporters
-                        </div>
-                    </div>
-                    <div id="supportersRight">
-
-                    </div>
-                </div>
-            </div>
+            {/* <Supporters/> */}
+            <FAQComp/>
             {/* Form */}
             <Form/>
             {/* Footer */}
