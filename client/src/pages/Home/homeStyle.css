@@ -65,6 +65,7 @@
     align-items: center;
     font-family: 'Work Sans', sans-serif;
     cursor: pointer;
+    border-radius: 4px;
 }
 
 #headerScrolled #headerActNowBtn {
@@ -243,6 +244,7 @@
     align-items: center;
     font-family: 'Work Sans', sans-serif;
     cursor: pointer;
+    border-radius: 4px;
 }
 
 #heroBtn:hover #actNowArrow {
@@ -566,11 +568,9 @@
     font-size: 20px;
     font-weight: bold;
     position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-  }
-  
-  #section2 .content {
-    height: 100px; /* Adjust this value based on your content's height */
-  }
-  
+    top: 100px;
+}
+
+#faqBox {
+box-shadow: rgba(0, 0, 0, 0.157) 0px 0.602187px 0.602187px -1.08333px, rgba(0, 0, 0, 0.145) 0px 2.28853px 2.28853px -2.16667px, rgba(0, 0, 0, 0.086) 0px 10px 10px -3.25px;
+}
