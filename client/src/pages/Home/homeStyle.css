@@ -549,27 +549,6 @@
 }
 
 /* SECTION 2 ======================================================= */
-#section2 {
-    width: 100vw;
-    min-height: 100vh;
-    background-color: var(--blue);
-    display: flex;
-    justify-content: center;
-    position: relative;
-}
-#section2 .container {
-    position: relative;
-  }
-  
-  #section2 .title {
-    background-color: #f0f0f0;
-    margin-top: 100px;
-    padding: 100px;
-    font-size: 20px;
-    font-weight: bold;
-    position: -webkit-sticky;
-    top: 100px;
-}
 
 #faqBox {
 box-shadow: rgba(0, 0, 0, 0.157) 0px 0.602187px 0.602187px -1.08333px, rgba(0, 0, 0, 0.145) 0px 2.28853px 2.28853px -2.16667px, rgba(0, 0, 0, 0.086) 0px 10px 10px -3.25px;
