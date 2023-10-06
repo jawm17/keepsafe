@@ -11,9 +11,9 @@
 }
 
 #faqSection h1 {
-  font-size: 48px;
+  font-size: var(--fs-title);
   color: black;
-  font-family: 'Work Sans', sans-serif;
+  font-family: var(--fontMain);
   text-align: center;
   padding-bottom: 50px;
 }
@@ -42,15 +42,16 @@
   align-items: center;
   height: 40px;
   color: white;
-  font-family: 'Work Sans', sans-serif;
-  font-weight: bold;
+  font-family: var(--fontMain);
+  font-weight: 400;
+  font-size: var(--fs-ptag);
 }
 
 #questionIcon {
   width: 25px;
   transition: all 0.1s linear;
   font-size: 32px;
-  font-weight: lighter;
+  font-weight: 300;
 }
 
 .question {
@@ -59,7 +60,8 @@
 
 .answer {
   color: white;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "SourceSansPro";
+  font-size: var(--fs-small);
   opacity: 0;
   transition: all 0.2s ease-in-out;
   padding-left: 10px;

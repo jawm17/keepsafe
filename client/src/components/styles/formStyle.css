@@ -2,10 +2,10 @@
 #formSection {
     padding-top: var(--medium-spacing);
     padding-bottom: var(--medium-spacing);
-    max-width: 1350px;
-    padding-left: 150px;
-    padding-right: 150px;
-    font-family: 'WorkSans';
+    max-width: 1250px;
+    margin: auto;
+
+    font-family: var(--fontMain);
 
 }
 @media only screen and (max-width: 800px) {
@@ -45,8 +45,8 @@
     width: 45%;
     min-height: 800px;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     display: flex;
     position: relative;
 }
@@ -60,8 +60,7 @@
     
 }
 #formWrap{
-    max-width: 550px;
-    min-width: 520px;
+    max-width: 100%;
     background-color: #fff;
     position: relative;
     box-shadow: 0 0 50px rgba(0, 0, 0, .15);
@@ -78,13 +77,12 @@
 }
 #formContent h3{
     text-align: center;
-    font-size: 35px;
+    font-size: var(--fs-title);
     color: #222;
     margin-top: 10px;
     margin-bottom: 10px;
-    font-family: 'WorkSans';
-    font-weight: 500;
-    line-height: 1.2em;
+    font-family: var(--fontMain);
+    font-weight: var(--title-fontWeight);
 }
 #form{
     grid-column-gap: 10px;
@@ -92,10 +90,10 @@
     justify-content: space-between;
     margin-top: 40px;
     display: flex;
+    font-weight: 400;
 }
 .textField {
-    font-size: 14px;
-
+    font-size: var(--fs-xs);
     height: 33px;
     margin-bottom: 10px;
     min-width: 43%;
@@ -119,8 +117,8 @@
     border: 1px rgba(34, 54, 69, .05);
     padding: 16px 18px;
     width: 100%;
-    font-size: 14px;
-    font-family: 'WorkSans';
+    font-size: var(--fs-xs);
+    font-family: var(--fontMain);
 
 }
 #btnFormContainer{
@@ -132,8 +130,8 @@
     text-transform: uppercase;
     justify-content: center;
     margin: 40px 0;
-    font-size: 14px;
-    font-weight: 700;
+    font-size: var(--ptag);
+    font-weight: var(--btn-fontWeight);
     line-height: 1.15;
     padding: 20px 40px;
     color: white;

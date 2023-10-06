@@ -2,7 +2,7 @@
 
 /* footer section ======================================================================= */
 footer{
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: var(--fontMain);
 
   padding: var(--medium-spacing) 350px;
     /* background-color: rgb(235, 231, 231); */
@@ -14,11 +14,13 @@ footer{
   text-align: center;
   width: 100%;
   color: rgba(0, 0, 0, 0.425);
+  font-size: var(--fs-sx);
 
 }
 #footer{
    border-bottom: rgba(0, 0, 0, 0.182) solid 2px;
     display: flex;
+    padding-bottom: 20px;
 }
 .footerSections{
   flex: 1 32%;
@@ -41,21 +43,24 @@ footer{
   padding-left: 20px;
   border-left: black solid 1px;
   height: fit-content;
+
 }
 #logoWords h5{
-  font-size: 20px;
-  text-transform: uppercase;
-  font-weight: 700;
+  font-size: var(--fs-ptag);
+  text-transform: capitalize;
+  font-weight: 400;
 }
 #logoWords p{
   text-transform: capitalize;
   font-weight: 300;
-  font-size: 15px;
+  font-size: var(--fs-sx);
 }
 /* mid side of footer */
 #midFooter{
   padding-left: 100px;
   color: rgba(0, 0, 0, 0.425);
+  text-align: center;
+  font-size: var(--fs-sx);
 }
 #midFooter > div{
   padding-bottom: 25px;
@@ -63,7 +68,8 @@ footer{
 /* right side of footer */
 #rightFooter{
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #rightFooter > div{
@@ -83,7 +89,7 @@ footer{
     padding: 15px 8px;
     text-align: center;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 400;
 }
 #contactBtn p span{
   margin-left: 10px;

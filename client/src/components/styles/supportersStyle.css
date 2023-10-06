@@ -36,9 +36,9 @@
 #outerContainerSup h1 {
   text-align: center;
   color: rgba(0, 0, 0, 0.678);
-  font-size: 25px;
-  font-weight: 600;
-  font-family: 'WorkSans';
+  font-size: var(--fs-subtitle);
+  font-weight: var(--subtitle-fontWeight);
+  font-family: var(--fontMain);
 
 
 }
@@ -90,10 +90,10 @@
 }
 
 @keyframes scroll-x {
-  from {
+  0% {
     transform: translateX(var(--scroll-start));
   }
-  to {
+  100% {
     transform: translateX(var(--scroll-end));
   }
 }
