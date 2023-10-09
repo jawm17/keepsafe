@@ -1,0 +1,14 @@
+#intervieweSection{
+    padding-bottom: var(--medium-spacing);
+    padding-top: var(--medium-spacing);
+}
+#intervieweSection h1{
+    font-family: var(--fontMain);
+    font-size: var(--fs-title);
+    font-weight: var(--title-fontWeight);
+    text-align: center;
+}
+
+#videoSlider{
+
+}

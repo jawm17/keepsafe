@@ -151,7 +151,10 @@ input {
 }
 
 :root {
-  --blue: #001566;
+  --blue: #213775;
+  --darkBlue: #0b0228;
+  --red: #da1333;
+  /* --blue: #001566; */
 
 
   --fontMain: "WorkSans";

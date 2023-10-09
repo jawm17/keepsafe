@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import LogoPng from "../assets/logo.png";
+import LogoPng1 from "../assets/whiteLogoSVG.svg";
+import LogoPng2 from "../assets/blueLogoSVG.svg";
 import "./styles/headerStyle.css";
 
 export default function Header() {
@@ -24,7 +25,7 @@ export default function Header() {
     return (
         <>
             <div id={scrolled || menuOpen ? "headerScrolled" : "headerInitial"}>
-                <img id="headerLogo" src={LogoPng} onClick={() => scroll("heroSection")}></img>
+                <img id="headerLogo" src={scrolled ? LogoPng2 : LogoPng1} onClick={() => scroll("heroSection")}></img>
                 <div id="headerBtnArea">
                     <div className="headerBtn" onClick={() => scroll("heroSection")}>
                         home

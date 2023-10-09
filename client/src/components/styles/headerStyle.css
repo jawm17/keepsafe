@@ -2,27 +2,25 @@
 #headerInitial {
     width: 100vw;
     height: 85px;
-    background-color: transparent;
+    background: linear-gradient(45deg,rgba(255, 255, 255, 0) 74.95%, #ffffff00 74.95%, #ffffff00 75.1%, rgba(191, 3, 3, 0) 75.05%);
     position: fixed;
     top: 0px;
     left: 0px;
     z-index: 10;
     display: flex;
     align-items: center;
-    transition: background 0.2s ease-out;
 }
 
 #headerScrolled {
     width: 100vw;
     height: 85px;
-    background-color: var(--blue);
+    background-color: white;
     position: fixed;
     top: 0px;
     left: 0px;
     z-index: 10;
     display: flex;
     align-items: center;
-    transition: background 0.2s ease-out;
     box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.1);
 }
 
@@ -31,7 +29,6 @@
     margin-left: 40px;
     cursor: pointer;
 }
-
 #headerBtnArea {
     display: flex;
     align-items: center;
@@ -48,6 +45,9 @@
     font-weight: 400;
     font-family: var(--fontMain);
 }
+#headerScrolled .headerBtn {
+    color: var(--blue);
+}
 
 #headerActNowBtn {
     position: absolute;
@@ -56,6 +56,7 @@
     width: 120px;
     background-color: var(--blue);
     color: white;
+    border: 1px solid rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,12 +65,14 @@
     text-transform: uppercase;
     font-weight: var(--btn-fontWeight);
 
-    border-radius: 4px;
+    border-radius: 2px;
 }
 
 #headerScrolled #headerActNowBtn {
-    background-color: white;
-    color: var(--blue);
+    /* background-color: white;
+    color: var(--blue); */
+    border: 1px solid white;
+
 }
 
 #menuBtn {
