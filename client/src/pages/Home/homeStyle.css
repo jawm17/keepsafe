@@ -38,14 +38,14 @@
 }
 
 .heroLogoLine.right {
-  background-color: white;
+  background-color: var(--white);
   /* background: linear-gradient(45deg, #ffffff 50%, #9f1f21 50%); */
   height: 1.5px;
   width: 42%;
 }
 .heroLogoLine.left {
-  background-color: white;
-  /* background: linear-gradient(45deg, var(--blue) 50%, white 50%); */
+    background-color: var(--white);
+    /* background: linear-gradient(45deg, var(--blue) 50%, white 50%); */
   height: 1.5px;
   width: 42%;
 }
@@ -132,8 +132,8 @@
 }
 
 #section1TopText {
-  color: gray;
-  font-size: var(--fs-small);
+  color: var(--red);
+  font-size: var(--fs-subtitle);
   font-family: var(--fontMain);
   font-weight: var(--subtitle-fontWeight);
   text-transform: uppercase;
@@ -156,6 +156,7 @@
   line-height: 1.8;
   font-size: 20px;
   font-family: "SourceSansPro";
+  color: var(--blue);
 }
 
 #section1ImgFlex {
@@ -163,6 +164,7 @@
   display: flex;
   justify-content: center;
   margin-top: 48px;
+
 }
 
 #section1ImgArea {
@@ -176,17 +178,24 @@
 }
 
 .section1Highlight {
+    /* box-shadow: -5px 5px 0px .5px var(--red); */
+    /* border: var(--red) solid 5px; */
   overflow: hidden;
   height: 250px;
   width: 32%;
-  border-radius: 4px;
+  border-radius: 0;
   object-fit: cover;
   cursor: pointer;
   background-size: cover;
   position: relative;
+  transition: box-shadow .2s ease-in-out;
+  border-radius: 5px;
 }
-
+.section1Highlight:hover {
+    box-shadow: 0px 0px 0px 0px transparent;
+}
 .section1Highlight:nth-child(1) {
+
   background-image: url("https://www.roundrocktexas.gov/wp-content/uploads/2019/10/Downtown-Rain-Main-Street-Tower-Cloudy.jpg");
 }
 
@@ -247,6 +256,7 @@
   font-size: var(--fs-small);
   text-transform: capitalize;
 }
+
 .section1Highlight:hover .learnMoreBtn {
   color: white;
 }

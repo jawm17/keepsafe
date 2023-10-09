@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import LogoPng1 from "../assets/whiteLogoSVG.svg";
-import LogoPng2 from "../assets/blueLogoSVG.svg";
+import LogoPng2 from "../assets/whiteLogoSVG.svg";
 import "./styles/headerStyle.css";
 
 export default function Header() {

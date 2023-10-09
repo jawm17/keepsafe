@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import HeroVid from "../../assets/trafic.mp4";
-import LogoPng from "../../assets/logo.png";
+import LogoPng from "../../assets/whiteLogoSVG.svg";
 import "./homeStyle.css";
 
 // Comps

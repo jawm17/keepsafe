@@ -106,6 +106,7 @@ body {
   overflow-x: hidden;
   line-height: 1.5;
   font-size: 100%;
+  background-color: var(--white);
 }
 ol,
 ul {
@@ -151,9 +152,11 @@ input:-webkit-autofill:active {
 }
 
 :root {
-  --blue: #213775;
+  --blue: #19488e;
   --darkBlue: #0b0228;
-  --red: #da1333;
+  --red: #BF0503;
+  --white: #ffffff;
+  --gray: #00000093;
   /* --blue: #001566; */
 
 
@@ -170,7 +173,7 @@ input:-webkit-autofill:active {
 
   --fs-hero: 60px;
   --fs-title: 48px;
-  --fs-subtitle: 22px;
+  --fs-subtitle: 20px;
   --fs-ptag: 18px;
   --fs-small: 16px;
   --fs-xs: 14px;
@@ -178,4 +181,7 @@ input:-webkit-autofill:active {
   --btn-fontWeight: 400;
   --subtitle-fontWeight: 500;
   --title-fontWeight: 400;
+
+  --btnRadius: 2px;
+
 }
