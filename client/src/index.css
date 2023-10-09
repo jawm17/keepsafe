@@ -130,7 +130,49 @@ table {
   border-spacing: 0;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+input {
+  all: unset;
+}
+@font-face {
+  font-family: 'WorkSans';
+  src: url('./assets/Work_Sans/WorkSans-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SourceSansPro';
+  src: url('./assets/SourceSansPro/SourceSansPro-Light.ttf') format('truetype');
+}
 
 :root {
   --blue: #001566;
+
+
+  --fontMain: "WorkSans";
+  --fontTwo: "SourceSansPro"
+
+  --small-spacing: 16px;
+  --medium-spacing: 48px;
+  --large-spacing: 80px;
+  
+  --main-header-padding: 15px;
+  --sub-header-padding: 10px;
+  --paragraph-padding: 5px;
+
+  --fs-hero: 60px;
+  --fs-title: 48px;
+  --fs-subtitle: 22px;
+  --fs-ptag: 18px;
+  --fs-small: 16px;
+  --fs-xs: 14px;
+
+  --btn-fontWeight: 400;
+  --subtitle-fontWeight: 500;
+  --title-fontWeight: 400;
 }

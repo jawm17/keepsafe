@@ -4,6 +4,7 @@ import LogoPng from "../../assets/logo.png";
 import "./homeStyle.css";
 
 // Comps 
+import Header from "../../components/Header"
 import Footer from "../../components/Footer"
 import Form from "../../components/Form"
 import FAQComp from "../../components/FAQComp"
@@ -32,52 +33,9 @@ export default function Home() {
 
     return (
         <div>
-            <div id={scrolled || menuOpen ? "headerScrolled" : "headerInitial"}>
-                <img id="headerLogo" src={LogoPng} onClick={() => scroll("heroSection")}></img>
-                <div id="headerBtnArea">
-                    <div className="headerBtn" onClick={() => scroll("heroSection")}>
-                        home
-                    </div>
-                    <div className="headerBtn" onClick={() => scroll("section1")}>
-                        about
-                    </div>
-                    <div className="headerBtn" onClick={() => scroll("section2")}>
-                        supporters
-                    </div>
-                    <div className="headerBtn" onClick={() => scroll("formSection")}>
-                        contact
-                    </div>
-                </div>
-                <div id="headerActNowBtn" onClick={() => scroll("formSection")}>
-                    act now
-                </div>
-                <svg onClick={() => setMenuOpen(!menuOpen)} id="menuBtn" style={menuOpen ? { display: "none" } : null} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg>
-                <svg onClick={() => setMenuOpen(!menuOpen)} id="menuBtn" style={!menuOpen ? { display: "none" } : null} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-            </div>
-            <div id={menuOpen ? "dropDownMenuOpen" : "dropDownMenu"} className="dropDownMenu">
-                <div id="menuOptionArea">
-                    <div className="menuOption" onClick={() => scroll("heroSection")}>
-                        home
-                    </div>
-                    <div className="menuOption" onClick={() => scroll("section1")}>
-                        about
-                    </div>
-                    <div className="menuOption" onClick={() => scroll("section2")}>
-                        supporters
-                    </div>
-                    <div className="menuOption" onClick={() => scroll("formSection")}>
-                        contact
-                    </div>
-                    <div id="actNowMenuBtn" onClick={() => scroll("formSection")}>
-                        act now!
-                    </div>
-                </div>
-            </div>
-
+            {/* Header */}
+           <Header/>
+           {/* Hero */}
             <div id="heroSection">
                 <div id="heroFlex">
                     <div id="heroArea">
@@ -92,7 +50,7 @@ export default function Home() {
                         <div id="heroBtnFlex">
                             <div id="heroBtn" onClick={() => scroll("formSection")}>
                                 <div>
-                                    support
+                                    Learn More
                                 </div>
                                 <svg id="actNowArrow" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -193,14 +151,12 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                        {/* <img className="section1Img" src="https://testsiterd.kinsta.cloud/wp-content/uploads/2023/04/round-rock-image.jpg"></img>
-                        <img className="section1Img" src="https://testsiterd.kinsta.cloud/wp-content/uploads/2023/04/round-rock-image.jpg"></img>
-                        <img className="section1Img" src="https://testsiterd.kinsta.cloud/wp-content/uploads/2023/04/round-rock-image.jpg"></img> */}
                     </div>
                 </div>
             </div>
-            {/* <Supporters/> */}
+            {/* FAQ */}
             <FAQComp/>
+            {/* <Supporters/> */}
             <Supporters/>
             {/* Form */}
             <Form />

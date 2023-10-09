@@ -18,6 +18,8 @@
 }
 
 #outerContainerSup {
+  padding-top: var(--medium-spacing);
+  padding-bottom: var(--medium-spacing);
   display: grid;
   align-content: center;
   overflow: hidden;
@@ -34,9 +36,9 @@
 #outerContainerSup h1 {
   text-align: center;
   color: rgba(0, 0, 0, 0.678);
-  font-size: 25px;
-  font-weight: 600;
-  font-family: 'WorkSans';
+  font-size: var(--fs-subtitle);
+  font-weight: var(--subtitle-fontWeight);
+  font-family: var(--fontMain);
 
 
 }
@@ -48,8 +50,8 @@
   gap: var(--gap);
   mask-image: linear-gradient(var(--mask-direction, to right),
       hsl(0 0% 0% / 0),
-      hsl(0 0% 0% / 1) 10%,
-      hsl(0 0% 0% / 1) 90%,
+      hsl(0 0% 0% / 1) 15%,
+      hsl(0 0% 0% / 1) 85%,
       hsl(0 0% 0% / 0));
 }
 
@@ -88,11 +90,10 @@
 }
 
 @keyframes scroll-x {
-  from {
+  0% {
     transform: translateX(var(--scroll-start));
   }
-
-  to {
+  100% {
     transform: translateX(var(--scroll-end));
   }
 }
@@ -101,7 +102,6 @@
   from {
     transform: translateY(var(--scroll-start));
   }
-
   to {
     transform: translateY(var(--scroll-end));
   }
