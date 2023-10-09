@@ -130,16 +130,16 @@ table {
   border-spacing: 0;
 }
 
-input:-webkit-autofill,
+/* input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0 30px white inset !important;
-}
+} */
 
-input {
+/* input {
   all: unset;
-}
+} */
 @font-face {
   font-family: 'WorkSans';
   src: url('./assets/Work_Sans/WorkSans-VariableFont_wght.ttf') format('truetype');
