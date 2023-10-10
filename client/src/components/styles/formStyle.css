@@ -2,7 +2,7 @@
 #formSection {
     padding-top: var(--medium-spacing);
     padding-bottom: var(--medium-spacing);
-    max-width: 1250px;
+    max-width: 1200px;
     margin: auto;
 
     font-family: var(--fontMain);
@@ -10,8 +10,7 @@
 }
 @media only screen and (max-width: 800px) {
     #formSection{
-        padding-left: 0px;
-        padding-right: 0px;
+        padding: 0px;
         }
     
 }
@@ -20,7 +19,8 @@
 }
 @media only screen and (max-width: 800px) {
     #formContainer{
-       padding:  0px 5px;
+        width: 90%;
+       margin: auto;
     }
     
 }
@@ -52,8 +52,8 @@
 }
 @media only screen and (max-width: 800px) {
     #formContent{
-        width: calc(100% - 100px);
-        margin: auto;
+        width: calc(100% - 50px);
+        display: block;
         
 
         }
@@ -131,7 +131,7 @@
     text-transform: uppercase;
     justify-content: center;
     margin: 40px 0;
-    font-size: var(--ptag);
+    font-size: var(--fs-ptag);
     font-weight: var(--btn-fontWeight);
     line-height: 1.15;
     padding: 0px 40px;

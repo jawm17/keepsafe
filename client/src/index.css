@@ -108,6 +108,7 @@ body {
   font-size: 100%;
   background-color: var(--white);
 }
+
 ol,
 ul {
   list-style: none;
@@ -183,5 +184,23 @@ input:-webkit-autofill:active {
   --title-fontWeight: 400;
 
   --btnRadius: 2px;
+
+}
+@media only screen and (max-width: 800px) {
+
+  :root {
+
+  
+    --fs-hero: 35px;
+    --fs-title: 35px;
+    --fs-subtitle: 16px;
+    --fs-ptag: 16px;
+    --fs-small: 16px;
+    --fs-xs: 14px;
+  
+  }
+  html{
+    font-size: 60%;
+  }
 
 }
