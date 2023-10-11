@@ -41,7 +41,18 @@
 
 
 }
-
+@media only screen and (max-width: 800px) {
+  #outerContainerSup {
+    padding-top: 35px;
+    padding-bottom: 35px;
+ 
+  }
+  #outerContainerSup h1 {
+    padding-bottom: 20px;
+  
+  
+  }
+}
 .marquee {
   display: flex;
   overflow: hidden;

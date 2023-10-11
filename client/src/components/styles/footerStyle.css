@@ -47,7 +47,7 @@ footer{
 
 }
 #logoWords h5{
-  font-size: var(--fs-ptag);
+  font-size: var(--fs-small);
   text-transform: capitalize;
   font-weight: 400;
 }
@@ -61,7 +61,7 @@ footer{
   padding-left: 100px;
   color: rgba(0, 0, 0, 0.425);
   text-align: center;
-  font-size: var(--fs-sx);
+  font-size: var(--fs-small);
 }
 #midFooter > div{
   padding-bottom: 25px;
@@ -169,10 +169,12 @@ footer{
   #leftFooter{
     justify-content: center;
     margin-bottom: 30px;
+    width: 100%;
   }
   #footerLogo{
     width: 50px;
     height: 50px;
+    padding-right: 0;
   }
   #logoWords{
     padding-left: 15px;

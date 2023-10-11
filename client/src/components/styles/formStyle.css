@@ -19,7 +19,7 @@
 }
 @media only screen and (max-width: 800px) {
     #formContainer{
-        width: 90%;
+        width:90vw;
        margin: auto;
     }
     
@@ -54,7 +54,6 @@
     #formContent{
         width: calc(100% - 50px);
         display: block;
-        
 
         }
     
@@ -72,6 +71,8 @@
         margin-left: 0px; 
         min-width: 100%;
         padding: 25px;
+        border-radius: 8px;
+
     }
     
 }
@@ -105,10 +106,18 @@
 @media only screen and (max-width: 800px) {
     .textField{
         min-width: calc(100% - 26px);
+        border-radius: 8px;
+
     }
     #formContent h3{
         text-align: center;
         font-size: 30px;
+    }
+    #textArea {
+        border-radius: 8px;
+    }
+    #buttonForm{
+        border-radius: 8px;
     }
     
 }

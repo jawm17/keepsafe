@@ -82,7 +82,7 @@
   width: 180px;
   height: 45px;
   background-color: var(--blue);
-  border: solid white 1px;
+  border: solid transparent 1px;
   color: white;
   display: flex;
   justify-content: center;
@@ -92,9 +92,14 @@
   cursor: pointer;
   border-radius: 4px;
 }
+#heroBtn:hover {
+ border: solid white 1px;
+
+}
 
 #heroBtn:hover #actNowArrow {
   margin-left: 18px;
+
 }
 
 #actNowArrow {
@@ -154,7 +159,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
   line-height: 1.8;
-  font-size: 20px;
+  font-size: var(--fs-ptag);
   font-family: "SourceSansPro";
   color: var(--blue);
 }
@@ -287,18 +292,10 @@
   rotate: 180deg;
 }
 
-@media only screen and (max-width: 940px) {
-  .highlightTitle {
-    color: white;
-    font-family: "Work Sans", sans-serif;
-    padding: 20px;
-    font-size: 18px;
-  }
-}
 
 @media only screen and (max-width: 825px) {
   #section1ImgFlex {
-    margin-top: 45px;
+    margin-top: 35px;
   }
 
   #section1ImgArea {
@@ -309,59 +306,49 @@
     width: 100%;
     margin-bottom: 20px;
   }
-}
-
-@media only screen and (max-width: 800px) {
+  #heroLogo {
+    height: 125px;
+  }
 #section1 {
-  width: 85vw;
+  width: 90vw;
   margin: auto;
+  padding-top: var(--medium-spacing);
+  padding-bottom: var(--medium-spacing);
 }
   #section1HeaderText {
-    margin-top: 10px;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 45px;
+
   }
 
   #section1SubText {
-    margin-top: 20px;
-    font-size: 18px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   #highlightOpen .highlightInfo {
     margin-top: 30px;
   }
-  
-}
+  #section1ImgArea {
+ width: 100%;
 
-@media only screen and (max-width: 650px) {
-
-  #section1HeaderText {
-    margin-top: 10px;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 32px;
   }
+  .heroLogoLine.right {
 
-  #section1SubText {
-    margin-top: 10px;
-    font-size: 18px;
+    width: 35%;
   }
-}
+  .heroLogoLine.left {
 
-@media only screen and (max-width: 550px) {
-
-  #section1HeaderText {
-    margin-top: 10px;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 32px;
+    width: 35%;
   }
-
-  #section1SubText {
-    margin-top: 10px;
-    font-size: 18px;
+  #heroBtn {
+    margin-top: 20px;
+    width: 150px;
+    height: 35px;
+  }
+  #heroText1 {
+   margin-top: 20px;
   }
 }
+
+
 
 /* SECTION 2 ======================================================= */
 
