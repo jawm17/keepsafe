@@ -9,6 +9,22 @@
   /* margin-top: 85px; */
   /* position: relative; */
 }
+#flagConatiner{
+  height: 10px;
+  position: relative;
+  overflow: visible;
+
+}
+#flagConatiner img{
+
+  width: 1300px;
+  position: absolute;
+  top: -260px;
+  left: -225px;
+  z-index: 5;
+  rotate: 11deg;
+  /* -webkit-box-reflect: right; */
+}
 
 #heroFlex {
   width: 100%;
@@ -126,6 +142,8 @@
   padding-bottom: var(--large-spacing);
   /* height: 100vh; */
   scroll-margin: 50px;
+  z-index:6;
+
 }
 
 #section1Flex {

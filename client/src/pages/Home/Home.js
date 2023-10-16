@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import LogoPng from "../../assets/whiteLogoSVG.svg";
+import FlagJpeg from "../../assets/Americanflag.png";
 import "./homeStyle.css";
 
 // Comps
@@ -38,6 +39,7 @@ export default function Home() {
       {/* Header */}
       <Header />
       {/* Hero */}
+      {/* <img id="img23" src="../../assets/flag.png"/> */}
       <div id="heroSection">
         <div id="heroFlex">
           <div id="heroArea">
@@ -51,7 +53,7 @@ export default function Home() {
               <mark id="boldHeroText"> Regulation Updates in Round Rock</mark>
             </div>
             <div id="heroBtnFlex">
-              <div id="heroBtn" onClick={() => scroll("formSection")}>
+              <div id="heroBtn" onClick={() => scroll("scollForm")}>
                 <div>Learn More</div>
                 <svg
                   id="actNowArrow"
@@ -80,6 +82,9 @@ export default function Home() {
           id="heroMedia"
           src="https://testsiterd.kinsta.cloud/wp-content/uploads/2023/04/Background.png"
         ></img>
+      <div id="flagConatiner">
+        <img src={FlagJpeg}/>
+      </div>
       </div>
       <div id="section1">
         <div id="section1Flex">

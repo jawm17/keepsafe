@@ -2,12 +2,17 @@
 
 /* footer section ======================================================================= */
 footer{
+  position: relative;
   font-family: var(--fontMain);
   max-width: 1200px;
   margin: auto;
   padding: var(--medium-spacing) ;
     /* background-color: rgb(235, 231, 231); */
     background-color: rgb(255, 255, 255);
+}
+footer a{
+  color: var(--gray);
+  text-decoration: none;
 }
 #copyWrite{
   padding-top: 25px;
@@ -16,12 +21,16 @@ footer{
   width: 100%;
   color: rgba(0, 0, 0, 0.425);
   font-size: var(--fs-sx);
+  z-index: 2;
 
 }
 #footer{
    border-bottom: rgba(0, 0, 0, 0.182) solid 2px;
     display: flex;
+    align-items: center;
     padding-bottom: 20px;
+    z-index: 2;
+
 }
 .footerSections{
   flex: 1 32%;
@@ -44,7 +53,10 @@ footer{
   padding-left: 20px;
   border-left: black solid 1px;
   height: fit-content;
-
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 #logoWords h5{
   font-size: var(--fs-small);
@@ -58,13 +70,14 @@ footer{
 }
 /* mid side of footer */
 #midFooter{
-  padding-left: 100px;
   color: rgba(0, 0, 0, 0.425);
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: var(--fs-small);
 }
-#midFooter > div{
-  padding-bottom: 25px;
+#midFooter>div{
+  padding-bottom: 0px;
 }
 /* right side of footer */
 #rightFooter{
@@ -102,7 +115,7 @@ footer{
 #lab_social_icon_footer{
     display: flex;
     justify-content: end;
-    padding-right: 20px;
+    /* padding-right: 20px; */
   }
 #lab_social_icon_footer .social{
     width: 35px;
@@ -133,7 +146,7 @@ footer{
   */
   
   #lab_social_icon_footer #social-fb:hover {
-    fill: #3B5998;
+    fill: #ee6f00;
   }
   
   #lab_social_icon_footer #social-tw:hover {
@@ -141,18 +154,20 @@ footer{
   }
   
   #lab_social_icon_footer #social-gp:hover {
-    fill: #d34836;
+    fill: #ed2106;
   }
   
+  #lab_social_icon_footer #social-face:hover {
+    fill: #12a8f3;
+  }
   #lab_social_icon_footer #social-em:hover {
-    fill: #f39c12;
+    fill: #122cf3;
   }
 
 
 
 @media screen and (max-width: 768px) {
   footer{
-    margin: 30px 0;
   }
   #copyWrite{
     font: var(--fs-small);
@@ -168,7 +183,7 @@ footer{
   /* Left side of footer */
   #leftFooter{
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     width: 100%;
   }
   #footerLogo{
@@ -191,6 +206,8 @@ footer{
   #midFooter{
     text-align: center;
     padding-left: 0;
+    margin-bottom: 20px;
+
   }
   #midFooter > div{
     margin-bottom:0px;
