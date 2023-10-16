@@ -9,7 +9,7 @@ export default function Header() {
 
     useEffect(() => {
         const handleScroll = () => {
-            setScrolled(window.scrollY > window.innerHeight * 0.1);
+            setScrolled(window.scrollY > window.innerHeight * 0.2);
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -33,10 +33,13 @@ export default function Header() {
                     <div className="headerBtn" onClick={() => scroll("section1")}>
                         about
                     </div>
-                    <div className="headerBtn" onClick={() => scroll("section2")}>
+                    <div className="headerBtn" onClick={() => scroll("scrollFAQ")}>
+                        FAQs
+                    </div>
+                    <div className="headerBtn" onClick={() => scroll("scollSup")}>
                         supporters
                     </div>
-                    <div className="headerBtn" onClick={() => scroll("formSection")}>
+                    <div className="headerBtn" onClick={() => scroll("scollForm")}>
                         contact
                     </div>
                 </div>
@@ -58,10 +61,10 @@ export default function Header() {
                     <div className="menuOption" onClick={() => scroll("section1")}>
                         about
                     </div>
-                    <div className="menuOption" onClick={() => scroll("section2")}>
+                    <div className="menuOption" onClick={() => scroll("scollSup")}>
                         supporters
                     </div>
-                    <div className="menuOption" onClick={() => scroll("formSection")}>
+                    <div className="menuOption" onClick={() => scroll("scollForm")}>
                         contact
                     </div>
                     <div id="actNowMenuBtn" onClick={() => scroll("formSection")}>

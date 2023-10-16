@@ -1,39 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import './styles/supportersStyle.css';
 
-// svg
-import LevelSvg from "../assets/levelSvg.svg"
-import AustIndia from "../assets/AustIndia.svg"
-import StarCandy from "../assets/3StarCandy-01.png"
-import Years25 from "../assets/25Years.png"
-import Buffet from "../assets/Buffet.png"
-import Cajun from "../assets/Cajun.png"
-import Centro from "../assets/Centro.png"
-import CleanEatz from "../assets/CleanEatz.png"
-import Finleys from "../assets/Finleys.png"
-import Ginos from "../assets/Ginos.png"
-import HAIRSALON from "../assets/HAIRSALON.png"
-import HURRICANE from "../assets/HURRICANE.png"
-import JerseyMikes from "../assets/JerseyMikes.png"
-import KenneyFort from "../assets/KenneyFort.png"
-import LaConcha from "../assets/LaConcha.png"
-import LAMPPOST from "../assets/LAMPPOST.png"
-import LibertyBarbeque from "../assets/LibertyBarbeque.png"
-import MicroBac from "../assets/MicroBac.png"
-import MOD from "../assets/MOD.png"
-import Palermo from "../assets/Palermo.png"
-import Razzoos from "../assets/Razzoos.png"
-import RioGrande from "../assets/RioGrande.png"
-import ROUNDRISK from "../assets/ROUNDRISK.png"
-import Santiagos from "../assets/Santiagos.png"
-import SMOKEHOUSE from "../assets/SMOKEHOUSE.png"
-import SnackRoom from "../assets/SnackRoom.png"
-import Tequila from "../assets/Tequila.png"
-import Tokyo from "../assets/Tokyo.png"
-import UrbanCreetside from "../assets/UrbanCreetside.png"
-import UrbanRoof from "../assets/UrbanRoof.png"
-import URBAN from "../assets/URBAN.png"
-import WARPATHPIZZA from "../assets/WARPATHPIZZA.png"
+
 
 
 const Supporters = () => {
@@ -42,54 +10,54 @@ const Supporters = () => {
   return (
     <div id="outerContainerSup">
       <h1>TRUSTED BY</h1>
-<article className="wrapper">
-    <div className="marquee">
-      <div className="marquee__group">
-        <img src={LevelSvg}/>
-        <img src={AustIndia}/>
-        <img src={StarCandy}/>
-        <img src={Years25}/>
-        <img src={Buffet}/>
-        <img src={Razzoos}/>
-        <img src={SMOKEHOUSE}/>
-        <img className="whiteLogo" src={UrbanCreetside}/>
-      </div>
-      <div aria-hidden="true" className="marquee__group">
-      <img src={Cajun}/>
-      <img className="whiteLogo" src={Centro}/>
-      <img src={CleanEatz}/>
-      <img className="whiteLogo" src={Finleys}/>
-      <img src={Ginos}/>
-      <img src={RioGrande}/>
-      <img src={SnackRoom}/>
-      <img src={UrbanRoof}/>
-      </div>
-    </div>
-    <div className="marquee marquee--reverse">
-      <div className="marquee__group">
-      <img src={HAIRSALON}/>
-      <img src={HURRICANE}/>
-      <img src={JerseyMikes}/>
-      <img src={KenneyFort}/>
-      <img src={LaConcha}/>
-      <img className="whiteLogo" src={ROUNDRISK}/>
-      <img src={Tequila}/>
-      <img src={URBAN}/>
-      </div>
-      <div aria-hidden="true" className="marquee__group">
-      <img className="whiteLogo" src={LAMPPOST}/>
-      <img src={LibertyBarbeque}/>
-      <img src={MicroBac}/>
-      <img className="whiteLogo" src={MOD}/>
-      <img src={Palermo}/>
-      <img src={Santiagos}/>
-      <img src={Tokyo}/>
-      <img src={WARPATHPIZZA}/>
-      </div>
-    </div>
-  </article>
+      <article className="wrapper">
+        <div className="marquee">
+          <div className="marquee__group">
+            <img src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/levelSvg.svg?alt=media&token=52bbecdb-f52a-46de-9793-9c79237cee42"/>
+            <img src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/AustIndia.svg?alt=media&token=2023bb3c-7f3d-4cfd-9068-49312220ca7e" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/3StarCandy-01.png?alt=media&token=757408e7-2775-43b8-8888-e2f06e02c90d"/>
+            <img src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/25Years.png?alt=media&token=c39e2f08-617a-4eef-9d01-e15bdf5d4dda" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/Buffet.png?alt=media&token=58d53753-5b2c-4f32-97e2-88bc25867d86" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/Razzoos.png?alt=media&token=239be2af-0b0b-4775-81f5-783e3f1511bf" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/SMOKEHOUSE.png?alt=media&token=f8cbd404-dc65-4efe-be2e-5121eb464312" />
+            <img className="whiteLogo" src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/UrbanCreetside.png?alt=media&token=db8a7526-b5d6-424e-9a3e-a412880b4203" />
+          </div>
+          <div aria-hidden="true" className="marquee__group">
+            <img src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/Cajun.png?alt=media&token=69bd4bfc-d499-4e75-af52-9b0f1c148392" />
+            <img className="whiteLogo" src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/Centro.png?alt=media&token=f87d239c-36fc-466b-9f3a-32dd2fa403d3" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/CleanEatz.png?alt=media&token=5381db1a-60be-4bcb-964f-deaa7762ff76" />
+            <img className="whiteLogo" src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/Finleys.png?alt=media&token=6770daf5-3638-478e-a671-2936b2c3ac06" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/Ginos.png?alt=media&token=eea17018-37a1-4ebd-a52d-d1abb850499b" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/RioGrande.png?alt=media&token=1a1e7d00-2194-47e1-a0dc-fdabbcda9646" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/SnackRoom.png?alt=media&token=c6479257-c987-4d45-9a4d-184c8367694e" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/UrbanRoof.png?alt=media&token=9d12b464-9a32-43d8-aaf3-a41726121a46" />
+          </div>
+        </div>
+        <div className="marquee marquee--reverse">
+          <div className="marquee__group">
+            <img src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/HAIRSALON.png?alt=media&token=6fa88619-b3dd-4a7c-88ea-4c603ef1032a" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/HURRICANE.png?alt=media&token=a7270f56-8d9c-4ee1-b2c0-6920feb6a338" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/JerseyMikes.png?alt=media&token=a6618412-07e4-496c-a609-9794ff646ef9" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/KenneyFort.png?alt=media&token=2c0212c0-956a-4bed-aeee-d01d25bb24ea" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/LaConcha.png?alt=media&token=6301fe81-7de0-4fe2-855e-44be4361d3c3" />
+            <img className="whiteLogo" src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/ROUNDRISK.png?alt=media&token=c548632b-3506-4544-ab50-af3dde13d502" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/Tequila.png?alt=media&token=17e15b99-16ee-4c2b-92ce-c0442d52405c" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/URBAN.png?alt=media&token=15135f54-d02d-4488-843c-9019556f735b" />
+          </div>
+          <div aria-hidden="true" className="marquee__group">
+            <img className="whiteLogo" src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/LAMPPOST.png?alt=media&token=f8432f3a-37da-44ad-b1ca-8702791b544a" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/LibertyBarbeque.png?alt=media&token=adaa0a5e-5226-48e5-854c-a4e3543148ea" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/MicroBac.png?alt=media&token=9b4ba8b0-93be-4405-9728-0973ce492ee0" />
+            <img className="whiteLogo" src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/MOD.png?alt=media&token=954d87ac-780d-4991-acf3-012d9e8413f9" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/Palermo.png?alt=media&token=35f8e0b2-f126-4b45-b8b2-2bbc1ee70064" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/Santiagos.png?alt=media&token=301e37fd-e078-4b09-8cef-0142881573cb" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/Tokyo.png?alt=media&token=2940ecbb-d107-4cf9-94f6-3a92b875a1bd" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/WARPATHPIZZA.png?alt=media&token=b96162c5-e0f0-439b-baa3-8c3b4fbfe405" />
+          </div>
+        </div>
+      </article>
 
- </div>
+    </div>
   );
 };
 

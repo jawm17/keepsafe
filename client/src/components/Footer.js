@@ -21,8 +21,8 @@ export default function Footer() {
         <p>Raleigh, NC 27601</p>
         </div> */}
         <div>
-        <p>(512) 420-3819</p>
-        <p>Jonesliddy77@gmail.com</p>
+        {/* <p>(512)-571-0564</p> */}
+        <p>info@keeproundrocksafe.org</p>
         </div>
       </div>
       <div className="footerSections" id="rightFooter">
@@ -85,7 +85,7 @@ export default function Footer() {
         </div>
       </div>
       </div>
-      <div id="copyWrite">© 2023 Cunningham Law Professional Limited Liability Company. All rights reserved. Law Firm Website Design by New Media Campaigns</div>
+      <div id="copyWrite">© Keep Round Rock Safe PAC. All rights reserved. Website design by Jones Motherfucking Liddy</div>
     </footer>
   );
 }

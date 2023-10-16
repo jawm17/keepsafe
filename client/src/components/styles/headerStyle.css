@@ -2,18 +2,18 @@
 #headerInitial {
     width: 100vw;
     height: 85px;
-    background: linear-gradient(45deg,var(--blue) 74.95%, #ffffff 74.95%, #ffffff 75.1%, var(--red) 75.05%);
+    background: linear-gradient(45deg,var(--blue) 74.6%, #ffffff 74.6%, #ffffff 75%, var(--red) 75%);
     position: fixed;
     top: 0px;
     left: 0px;
     z-index: 10;
     display: flex;
     align-items: center;
+    scroll-margin:100px ;
 }
 
 #headerScrolled {
-    background: linear-gradient(45deg,var(--blue) 74.95%, #ffffff 74.95%, #ffffff 75.1%, var(--red) 75.05%);
-
+    background: linear-gradient(45deg,var(--blue) 74.6%, #ffffff 74.6%, #ffffff 75%, var(--red) 75%);
     width: 100vw;
     height: 85px;
     position: fixed;
@@ -45,6 +45,7 @@
     text-transform: uppercase;
     font-weight: 400;
     font-family: var(--fontMain);
+
 }
 #headerScrolled .headerBtn {
     color: var(--white);

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import HeroVid from "../../assets/trafic.mp4";
 import LogoPng from "../../assets/whiteLogoSVG.svg";
 import "./homeStyle.css";
 
@@ -10,6 +9,8 @@ import Form from "../../components/Form";
 import FAQComp from "../../components/FAQComp";
 import Supporters from "../../components/Supporters";
 import Interviews from "../../components/Interviews";
+
+
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -46,8 +47,8 @@ export default function Home() {
               <div className="heroLogoLine right"></div>
             </div>
             <div id="heroText1">
-              Building Value at the Intersection of{" "}
-              <mark id="boldHeroText">Law, Business and Community</mark>
+              Supporting Common Sense Sign
+              <mark id="boldHeroText"> Regulation Updates in Round Rock</mark>
             </div>
             <div id="heroBtnFlex">
               <div id="heroBtn" onClick={() => scroll("formSection")}>
@@ -74,9 +75,7 @@ export default function Home() {
         <div id="heroTextFlex">
           <div id="heroText"></div>
         </div>
-        {/* <video id="heroVid" autoPlay muted loop>
-                    <source src={HeroVid} type="video/mp4" />
-                </video> */}
+
         <img
           id="heroMedia"
           src="https://testsiterd.kinsta.cloud/wp-content/uploads/2023/04/Background.png"
@@ -85,19 +84,26 @@ export default function Home() {
       <div id="section1">
         <div id="section1Flex">
           <div id="section1Area">
-            <div id="section1TopText">Our Mission</div>
+            <div id="section1TopText">About Us</div>
             <div id="section1HeaderText">
-              We are a coalition of local businesses advocating for new sign
-              rules
+              We are a coalition in Round Rock of local businesses advocating
+              for new sign rules
             </div>
             <div id="section1SubText">
-              Empower Round Rock with Electronic Message Center (EMC) signs: a
-              pivotal tool for economic growth, heightened public safety, and
-              emergency responsiveness. Restricted to I-35 and SH-45 only, EMC
-              signs respect our city’s serene and scenic areas and will be
-              limited to high-traffic commercial corridors only. Let’s modernize
-              Round Rock’s sign regulations and champion a safer, prosperous
-              future for us all.
+              Electronic Message Center (EMC) signs are an effective and modern
+              tool for economic growth, heightened public safety, and emergency
+              responsiveness. Round Rock city leadership agrees with us, and has
+              already allowed EMCs for the Round Rock Express and Kalahari
+              Resort. But our coalition believes that this technology should be
+              available for businesses of all sizes. We are proposing that Round
+              Rock leadership expand access to EMCs by allowing a limited number
+              (12) of these signs to be installed along I-35 and SH-45 only.
+              Restricting signs to these highways will respect our city’s serene
+              and scenic areas and neighborhoods by keeping them in the
+              commercial and high-traffic corridors where they are most
+              appropriate. Please consider supporting our coalition of local
+              businesses and help us modernize Round Rock’s sign regulations and
+              champion a safer and more prosperous future for us all.
             </div>
           </div>
         </div>
@@ -115,8 +121,8 @@ export default function Home() {
                 </div>
                 <div className="learnMoreHighlight">
                   <div className="highlightInfo">
-                    Let’s modernize Round Rock’s sign regulations and champion a
-                    safer, prosperous future for us all.
+                    EMCs can be programmed remotely to display critical
+                    emergency messages at a moment’s notice.
                   </div>
                 </div>
                 <div className="learnMoreBtn">
@@ -151,8 +157,8 @@ export default function Home() {
                 </div>
                 <div className="learnMoreHighlight">
                   <div className="highlightInfo">
-                    Let’s modernize Round Rock’s sign regulations and champion a
-                    safer, prosperous future for us all.
+                    Allow local businesses to reach the 7,500,000 vehicles per
+                    month that travel through Round Rock.
                   </div>
                 </div>
                 <div className="learnMoreBtn">
@@ -187,8 +193,8 @@ export default function Home() {
                 </div>
                 <div className="learnMoreHighlight">
                   <div className="highlightInfo">
-                    Let’s modernize Round Rock’s sign regulations and champion a
-                    safer, prosperous future for us all.
+                    Business growth will stimulate our local economy, drive
+                    sales tax receipts, and create new jobs.
                   </div>
                 </div>
                 <div className="learnMoreBtn">
@@ -215,11 +221,16 @@ export default function Home() {
         </div>
       </div>
       {/* FAQ */}
-      <FAQComp />
-      {/* <Supporters/> */}
-      <Supporters />
+      <div id="scrollFAQ">
+        <FAQComp />
+      </div>
+      <div id="scollSup">
+        <Supporters />
+      </div>
       {/* Form */}
-      <Form />
+      <div id="scollForm">
+        <Form />
+      </div>
       {/* Interviews */}
       {/* <Interviews/> */}
       {/* Footer */}

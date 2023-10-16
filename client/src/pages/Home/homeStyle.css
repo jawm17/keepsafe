@@ -40,18 +40,18 @@
 .heroLogoLine.right {
   background-color: var(--white);
   /* background: linear-gradient(45deg, #ffffff 50%, #9f1f21 50%); */
-  height: 1.5px;
+  height: 4px;
   width: 42%;
 }
 .heroLogoLine.left {
     background-color: var(--white);
     /* background: linear-gradient(45deg, var(--blue) 50%, white 50%); */
-  height: 1.5px;
+  height: 4px;
   width: 42%;
 }
 
 #heroLogo {
-  height: 175px;
+  height: 13vw;
 }
 
 #heroText1 {
@@ -125,6 +125,7 @@
   padding-top: var(--large-spacing);
   padding-bottom: var(--large-spacing);
   /* height: 100vh; */
+  scroll-margin: 50px;
 }
 
 #section1Flex {
@@ -356,4 +357,13 @@
   box-shadow: rgba(0, 0, 0, 0.157) 0px 0.602187px 0.602187px -1.08333px,
     rgba(0, 0, 0, 0.145) 0px 2.28853px 2.28853px -2.16667px,
     rgba(0, 0, 0, 0.086) 0px 10px 10px -3.25px;
+}
+#scollSup{
+  scroll-margin: 50px;
+}
+#scollForm{
+  scroll-margin: 50px;
+}
+#scrollFAQ{
+  scroll-margin: 50px;
 }
