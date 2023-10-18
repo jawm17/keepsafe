@@ -9,8 +9,8 @@ export default function Footer() {
           <div id="footerLogo"></div>
           {/* border left  */}
           <div id="logoWords">
-            <h5>keep roundrock safe</h5>
-            <p>support local bussiness</p>
+            <h5>keep Round Rock safe</h5>
+            <p>support local business</p>
           </div>
         </div>
         <div className="footerSections" id="midFooter">
@@ -98,8 +98,7 @@ export default function Footer() {
         </div>
       </div>
       <div id="copyWrite">
-        © Keep Round Rock Safe PAC. All rights reserved. Website design by Jones
-        Motherfucking Liddy
+        © Keep Round Rock Safe PAC. All rights reserved. Designed by Venue.
       </div>
     </footer>
   );

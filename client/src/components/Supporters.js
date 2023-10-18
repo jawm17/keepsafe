@@ -37,7 +37,8 @@ const Supporters = () => {
           <div className="marquee__group">
             <img src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/HAIRSALON.png?alt=media&token=6fa88619-b3dd-4a7c-88ea-4c603ef1032a" />
             <img src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/HURRICANE.png?alt=media&token=a7270f56-8d9c-4ee1-b2c0-6920feb6a338" />
-            <img src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/JerseyMikes.png?alt=media&token=a6618412-07e4-496c-a609-9794ff646ef9" />
+            {/* <img src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/JerseyMikes.png?alt=media&token=a6618412-07e4-496c-a609-9794ff646ef9" /> */}
+            {/* <img src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/JerseyMikes.png?alt=media&token=a6618412-07e4-496c-a609-9794ff646ef9" /> */}
             <img src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/KenneyFort.png?alt=media&token=2c0212c0-956a-4bed-aeee-d01d25bb24ea" />
             <img src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/LaConcha.png?alt=media&token=6301fe81-7de0-4fe2-855e-44be4361d3c3" />
             <img className="whiteLogo" src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/ROUNDRISK.png?alt=media&token=c548632b-3506-4544-ab50-af3dde13d502" />

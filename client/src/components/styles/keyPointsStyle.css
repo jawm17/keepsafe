@@ -1,0 +1,96 @@
+#keyPointsSection{
+    position: relative;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#heroKeyLine{
+    height: 3.5px;
+    width: 19%;
+    position: absolute;
+    top:35px;
+    background-color: rgb(255, 255, 255);
+    /* opacity: .8; */
+}
+#heroKeyLine2{
+    bottom: 30px;
+    height: 3.5px;
+    width:90%;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    /* opacity: .8; */
+}
+.keys{
+    position: relative;
+    display: flex;
+    gap: 10px;
+    font-size: var(--fs-title2);
+    font-family: var(--fontMain);
+    font-weight: 400;
+
+}
+.keys h3{
+    position: absolute;
+    bottom: 1px;
+    width: 101%;
+}
+.keys h4{
+    position: absolute;
+    bottom: 2px;
+    width: 101%;
+    font-weight: 600;
+}
+/* one */
+.keys.one{
+    color: var(--white);
+}
+.keys.one h3{
+    color: var(--white);
+    right: 0;
+}
+.keys.one h4{
+    color: var(--red);
+    right: 0;
+}
+/* two */
+.keys.two{
+    color: var(--white);
+}
+.keys.two h3{
+    color: var(--white);
+    left: 0;
+    right: 0;
+}
+.keys.two h4{
+    color: var(--blue);
+    left: 0;
+    right: 0;
+}
+/* three */
+.keys.three{
+    color: var(--white);
+}
+.keys.three h3{
+    color: var(--white);
+    left: 0;
+}
+.keys.three h4{
+    color: var(--white);
+    left: 0;
+}
+/* star */
+#star{
+    fill: var(--white);
+    width: 35px;
+}
+@media only screen and (max-width: 825px) {
+    #keyPointsSection{
+        display: none;
+    }
+}

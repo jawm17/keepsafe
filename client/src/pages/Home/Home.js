@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import LogoPng from "../../assets/whiteLogoSVG.svg";
 import FlagJpeg from "../../assets/Americanflag.png";
+import HeroBG from "../../assets/heroBG.mp4";
 import "./homeStyle.css";
 
 // Comps
@@ -9,6 +10,7 @@ import Footer from "../../components/Footer";
 import Form from "../../components/Form";
 import FAQComp from "../../components/FAQComp";
 import Supporters from "../../components/Supporters";
+import KeyPoints from "../../components/KeyPoints";
 import Interviews from "../../components/Interviews";
 
 
@@ -33,7 +35,21 @@ export default function Home() {
     document.getElementById(section).scrollIntoView({ behavior: "smooth" });
     setMenuOpen(false);
   }
+  // ================
+  // video
+  const videoEl = useRef(null);
 
+  const attemptPlay = () => {
+    videoEl &&
+      videoEl.current &&
+      videoEl.current.play().catch(error => {
+        console.error("Error attempting to play", error);
+      });
+  };
+
+  useEffect(() => {
+    attemptPlay();
+  }, []);
   return (
     <div>
       {/* Header */}
@@ -52,6 +68,8 @@ export default function Home() {
               Supporting Common Sense Sign
               <mark id="boldHeroText"> Regulation Updates in Round Rock</mark>
             </div>
+            <KeyPoints/>
+
             <div id="heroBtnFlex">
               <div id="heroBtn" onClick={() => scroll("scollForm")}>
                 <div>Learn More</div>
@@ -78,10 +96,14 @@ export default function Home() {
           <div id="heroText"></div>
         </div>
 
-        <img
-          id="heroMedia"
-          src="https://testsiterd.kinsta.cloud/wp-content/uploads/2023/04/Background.png"
-        ></img>
+        <div id="heroVideoContainer">
+        <video id="heroMedia"
+          loop
+          muted
+          src={HeroBG}
+          ref={videoEl}
+        />
+        </div>
       <div id="flagConatiner">
         <img src={FlagJpeg}/>
       </div>

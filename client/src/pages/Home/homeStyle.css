@@ -19,8 +19,8 @@
 
   width: 1300px;
   position: absolute;
-  top: -260px;
-  left: -225px;
+  top: -210px;
+  left: -200px;
   z-index: 5;
   rotate: 11deg;
   /* -webkit-box-reflect: right; */
@@ -35,7 +35,7 @@
   /* margin-top: 85px; */
   position: absolute;
   z-index: 5;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.174);
 }
 
 #heroArea {
@@ -56,14 +56,17 @@
 .heroLogoLine.right {
   background-color: var(--white);
   /* background: linear-gradient(45deg, #ffffff 50%, #9f1f21 50%); */
-  height: 4px;
-  width: 42%;
+    height: 3.5px;
+  width: 38%;
+  /* opacity: .8; */
+
 }
 .heroLogoLine.left {
     background-color: var(--white);
+    /* opacity: .8; */
     /* background: linear-gradient(45deg, var(--blue) 50%, white 50%); */
-  height: 4px;
-  width: 42%;
+    height: 3.5px;
+  width: 38%;
 }
 
 #heroLogo {
@@ -76,7 +79,7 @@
   font-family: var(--fontMain);
   font-size: var(--fs-hero);
   margin-top: 10px;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 #boldHeroText {
@@ -124,12 +127,19 @@
   transition: all 0.2s ease-out;
 }
 
-#heroMedia {
+#heroVideoContainer {
   width: 100vw;
   height: 100vh;
-  object-fit: cover;
-  padding: 0;
-  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* object-fit: cover; */
+}
+#heroMedia {
+  /* width: 80%; */
+  padding-top: -100px;
+  margin: auto;
 }
 
 
@@ -312,6 +322,20 @@
 }
 
 
+#faqBox {
+  box-shadow: rgba(0, 0, 0, 0.157) 0px 0.602187px 0.602187px -1.08333px,
+    rgba(0, 0, 0, 0.145) 0px 2.28853px 2.28853px -2.16667px,
+    rgba(0, 0, 0, 0.086) 0px 10px 10px -3.25px;
+}
+#scollSup{
+  scroll-margin: 50px;
+}
+#scollForm{
+  scroll-margin: 65px;
+}
+#scrollFAQ{
+  scroll-margin: 50px;
+}
 @media only screen and (max-width: 825px) {
   #flagConatiner{
     display:none;
@@ -353,6 +377,9 @@
  width: 100%;
 
   }
+  #heroSection{
+    height: 85vh;
+  }
   .heroLogoLine.right {
 
     width: 35%;
@@ -367,7 +394,12 @@
     height: 35px;
   }
   #heroText1 {
+    margin: auto;
    margin-top: 20px;
+   width: 88%;
+  }
+  #scollForm{
+    scroll-margin: 90px;
   }
 }
 
@@ -375,17 +407,3 @@
 
 /* SECTION 2 ======================================================= */
 
-#faqBox {
-  box-shadow: rgba(0, 0, 0, 0.157) 0px 0.602187px 0.602187px -1.08333px,
-    rgba(0, 0, 0, 0.145) 0px 2.28853px 2.28853px -2.16667px,
-    rgba(0, 0, 0, 0.086) 0px 10px 10px -3.25px;
-}
-#scollSup{
-  scroll-margin: 50px;
-}
-#scollForm{
-  scroll-margin: 50px;
-}
-#scrollFAQ{
-  scroll-margin: 50px;
-}

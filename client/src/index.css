@@ -172,8 +172,9 @@ input:-webkit-autofill:active {
   --sub-header-padding: 10px;
   --paragraph-padding: 5px;
 
-  --fs-hero: 55px;
+  --fs-hero: 52px;
   --fs-title: 48px;
+  --fs-title2: 30px;
   --fs-subtitle: 20px;
   --fs-ptag: 18px;
   --fs-small: 16px;

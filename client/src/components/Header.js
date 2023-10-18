@@ -39,7 +39,7 @@ export default function Header() {
                     <div className="headerBtn" onClick={() => scroll("scollSup")}>
                         supporters
                     </div>
-                    <div className="headerBtn" onClick={() => scroll("scollForm")}>
+                    <div className="headerBtn" onClick={() => scroll("footer")}>
                         contact
                     </div>
                 </div>
@@ -64,10 +64,10 @@ export default function Header() {
                     <div className="menuOption" onClick={() => scroll("scollSup")}>
                         supporters
                     </div>
-                    <div className="menuOption" onClick={() => scroll("scollForm")}>
+                    <div className="menuOption" onClick={() => scroll("footer")}>
                         contact
                     </div>
-                    <div id="actNowMenuBtn" onClick={() => scroll("formSection")}>
+                    <div id="actNowMenuBtn" onClick={() => scroll("scollForm")}>
                         act now!
                     </div>
                 </div>
