@@ -192,9 +192,9 @@ input:-webkit-autofill:active {
   :root {
 
   
-    --fs-hero: 30px;
-    --fs-title: 29px;
-    --fs-subtitle: 17px;
+    --fs-hero: 29px;
+    --fs-title: 26px;
+    --fs-subtitle: 18px;
     --fs-ptag: 16px;
     --fs-small: 14px;
     --fs-xs: 14px;

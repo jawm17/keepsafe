@@ -341,6 +341,16 @@
     display:none;
   
   }
+  #heroVideoContainer {
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -200px center;
+    background-image: url(https://testsiterd.kinsta.cloud/wp-content/uploads/2023/04/Background.png);
+  }
+  #heroMedia {
+    display: none;
+  }
   #section1ImgFlex {
     margin-top: 35px;
   }
@@ -378,7 +388,7 @@
 
   }
   #heroSection{
-    height: 85vh;
+    height: 90vh;
   }
   .heroLogoLine.right {
 
@@ -400,6 +410,9 @@
   }
   #scollForm{
     scroll-margin: 90px;
+  }
+  #heroFlex{
+    background-color: rgba(0, 0, 0, 0.41);
   }
 }
 
