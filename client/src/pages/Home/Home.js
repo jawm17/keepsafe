@@ -113,7 +113,7 @@ export default function Home() {
           <div id="section1Area">
             <div id="section1TopText">About Us</div>
             <div id="section1HeaderText">
-              We are a coalition in Round Rock of local businesses advocating
+              We are a coalition of local Round Rock businesses advocating
               for new sign rules
             </div>
             <div id="section1SubText">
@@ -124,9 +124,9 @@ export default function Home() {
               Resort. But our coalition believes that this technology should be
               available for businesses of all sizes. We are proposing that Round
               Rock leadership expand access to EMCs by allowing a limited number
-              (12) of these signs to be installed along I-35 and SH-45 only.
+              (twelve) of these signs to be installed along I-35 and SH-45 only.
               Restricting signs to these highways will respect our city’s serene
-              and scenic areas and neighborhoods by keeping them in the
+              and scenic areas and neighborhoods by keeping EMCs in the
               commercial and high-traffic corridors where they are most
               appropriate. Please consider supporting our coalition of local
               businesses and help us modernize Round Rock’s sign regulations and

@@ -3,7 +3,7 @@
   --color-bg: papayawhip;
   --color-bg-accent: #ecdcc0;
   --size: clamp(10rem, 5rem + 10vmin, 50rem);
-  --gap: calc(var(--size) / 75);
+  --gap: calc(var(--size) / 76);
   --duration: 15s;
   --scroll-start: 5%;
   --scroll-end: calc(-95% - var(--gap));
@@ -141,6 +141,9 @@
   /* padding: calc(var(--size) / 6); */
 }
 
+#smoke{
+  width: 15vw;
+}
 
 /* Parent wrapper */
 .wrapper {

@@ -67,7 +67,7 @@ export default function Footer() {
                     <path d="M353.97 0.43c0.03,7.81 2.31,120.68 120.76,127.72 0,32.55 0.04,56.15 0.04,87.21 -8.97,0.52 -77.98,-4.49 -120.93,-42.8l-0.13 169.78c1.63,117.84 -85.09,189.55 -198.44,164.78 -195.46,-58.47 -130.51,-348.37 65.75,-317.34 0,93.59 0.05,-0.03 0.05,93.59 -81.08,-11.93 -108.2,55.52 -86.65,103.81 19.6,43.97 100.33,53.5 128.49,-8.53 3.19,-12.14 4.78,-25.98 4.78,-41.52l0 -337.13 86.28 0.43z"></path>
                   </svg>
                 </a>
-                {/* <a href="https://www.tiktok.com/@keeproundrocksafe?is_from_webapp=1&sender_device=pc">
+                <a href="https://www.tiktok.com/@keeproundrocksafe?is_from_webapp=1&sender_device=pc">
                   <svg
                     id="social-face"
                     className="social"
@@ -77,7 +77,7 @@ export default function Footer() {
                   >
                     <path d="M1376 128q119 0 203.5 84.5T1664 416v960q0 119-84.5 203.5T1376 1664h-188v-595h199l30-232h-229V689q0-56 23.5-84t91.5-28l122-1V369q-63-9-178-9-136 0-217.5 80T948 666v171H748v232h200v595H416q-119 0-203.5-84.5T128 1376V416q0-119 84.5-203.5T416 128h960z"></path>
                   </svg>
-                </a> */}
+                </a>
                 <a href="mailto:info@keeproundrocksafe.org">
                   <svg
                     id="social-em"
@@ -97,9 +97,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div id="copyWrite">
-        © Keep Round Rock Safe PAC. All rights reserved. Designed by Venue.
-      </div>
+      <div id="copyWrite">© Keep Round Rock Safe PAC. All rights reserved.</div>
     </footer>
   );
 }

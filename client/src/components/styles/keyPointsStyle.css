@@ -1,27 +1,30 @@
 #keyPointsSection{
     position: relative;
     padding-top: 70px;
-    padding-bottom: 70px;
-    max-width: 1100px;
+    padding-bottom:15px;
+    max-width: 90%;
     margin: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    /* gap:25px; */
 }
 
 #heroKeyLine{
+    margin: auto;
     height: 3.5px;
-    width: 19%;
+    width: 125%;
+    top: -40px;
+    left: -12%;
+    right: 0;
     position: absolute;
-    top:35px;
     background-color: rgb(255, 255, 255);
     /* opacity: .8; */
 }
 #heroKeyLine2{
     bottom: 30px;
     height: 3.5px;
-    width:90%;
+    width:55%;
     position: absolute;
     background-color: rgb(255, 255, 255);
     /* opacity: .8; */
@@ -60,6 +63,7 @@
 }
 /* two */
 .keys.two{
+    position: relative;
     color: var(--white);
 }
 .keys.two h3{
@@ -87,7 +91,8 @@
 /* star */
 #star{
     fill: var(--white);
-    width: 35px;
+    scale: 1.2;
+
 }
 @media only screen and (max-width: 825px) {
     #keyPointsSection{
