@@ -13,8 +13,6 @@ import Supporters from "../../components/Supporters";
 import KeyPoints from "../../components/KeyPoints";
 import Interviews from "../../components/Interviews";
 
-
-
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
