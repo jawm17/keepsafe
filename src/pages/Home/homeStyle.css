@@ -346,10 +346,13 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: -200px center;
-    background-image: url(https://testsiterd.kinsta.cloud/wp-content/uploads/2023/04/Background.png);
+    /* background-image: url(https://testsiterd.kinsta.cloud/wp-content/uploads/2023/04/Background.png); */
   }
   #heroMedia {
-    display: none;
+    /* width: 100vw; */
+    height: 90vh;
+    object-fit: fill;
+    margin-right: -500px;
   }
   #section1ImgFlex {
     margin-top: 35px;
