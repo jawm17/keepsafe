@@ -98,8 +98,10 @@ export default function Home() {
         <video id="heroMedia"
           loop
           muted
-          src={HeroBG}
           ref={videoEl}
+          playsInline
+          src={HeroBG}
+
         />
         </div>
       <div id="flagConatiner">

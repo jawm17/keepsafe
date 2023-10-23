@@ -350,9 +350,9 @@
   }
   #heroMedia {
     /* width: 100vw; */
-    height: 90vh;
+    height: 600px;
     object-fit: fill;
-    margin-right: -500px;
+    margin-right: -400px;
   }
   #section1ImgFlex {
     margin-top: 35px;
@@ -391,7 +391,7 @@
 
   }
   #heroSection{
-    height: 80vh;
+    height: 600px;
   }
   .heroLogoLine.right {
 
