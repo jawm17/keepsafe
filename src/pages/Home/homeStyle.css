@@ -17,9 +17,9 @@
 }
 #flagConatiner img{
 
-  width: 1300px;
+  width: 75vw;
   position: absolute;
-  top: -210px;
+  top: -190px;
   left: -200px;
   z-index: 5;
   rotate: 11deg;
@@ -345,14 +345,18 @@
     align-items: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: -200px center;
-    background-image: url(https://testsiterd.kinsta.cloud/wp-content/uploads/2023/04/Background.png);
+    /* background-position: -200px center; */
+    /* background-image: url(https://testsiterd.kinsta.cloud/wp-content/uploads/2023/04/Background.png); */
   }
   #heroMedia {
-    display: none;
+    /* width: 100vw; */
+    height: 600px;
+    object-fit: fill;
+    margin-right: -400px;
+    margin-top: 5%;
   }
   #section1ImgFlex {
-    margin-top: 35px;
+    /* margin-top: 5%; */
   }
 
   #section1ImgArea {
@@ -388,7 +392,7 @@
 
   }
   #heroSection{
-    height: 80vh;
+    height: 600px;
   }
   .heroLogoLine.right {
 

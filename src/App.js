@@ -1,7 +1,7 @@
 import React from 'react';
-import PrivateRoute from './hocs/PrivateRoute';
-import UnPrivateRoute from './hocs/UnPrivateRoute';
-import AVPRoute from './hocs/AVPRoute';
+// import PrivateRoute from './hocs/PrivateRoute';
+// import UnPrivateRoute from './hocs/UnPrivateRoute';
+// import AVPRoute from './hocs/AVPRoute';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import "./index.css";
 
