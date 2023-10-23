@@ -17,9 +17,9 @@
 }
 #flagConatiner img{
 
-  width: 1300px;
+  width: 75vw;
   position: absolute;
-  top: -210px;
+  top: -190px;
   left: -200px;
   z-index: 5;
   rotate: 11deg;

@@ -72,6 +72,18 @@
   /* padding-top: 10px; */
   /* padding-bottom: 10px; */
 }
+.answer p{
+  color: var(--blue);
+  font-family: var(--fontMain);
+  font-weight: 500;
+  padding-top: 10px;
+
+
+  /* padding-left: 40px;
+  padding-right: 15px; */
+  /* padding-top: 10px; */
+  /* padding-bottom: 10px; */
+}
 
 .selectedQ {
   max-height: 400px;
