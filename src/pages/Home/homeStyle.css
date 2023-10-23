@@ -345,7 +345,7 @@
     align-items: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: -200px center;
+    /* background-position: -200px center; */
     /* background-image: url(https://testsiterd.kinsta.cloud/wp-content/uploads/2023/04/Background.png); */
   }
   #heroMedia {
@@ -353,9 +353,10 @@
     height: 600px;
     object-fit: fill;
     margin-right: -400px;
+    margin-top: 5%;
   }
   #section1ImgFlex {
-    margin-top: 35px;
+    /* margin-top: 5%; */
   }
 
   #section1ImgArea {
