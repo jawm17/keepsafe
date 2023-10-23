@@ -13,7 +13,7 @@ function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/" component={NoMatchPage} />
+        <Route path="/" component={Home} />
         {/* <Route path="/" component={NoMatchPage} /> */}
       </Switch>
     </BrowserRouter>
