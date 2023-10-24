@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import PopUp from "./PopUp";
 import "./styles/formStyle.css";
 
 export default function Form() {
@@ -12,6 +13,9 @@ export default function Form() {
     const [errorMsg, setErrorMsg] = useState("");
     const [success, setSuccess] = useState(false);
     const [loading, setLoading] = useState(false);
+
+    // true = popup open, false = popup closed
+    const [popUpOpen, setPopUpOpen] = useState(false);
 
     async function submitForm() {
         if (name && email && number && message) {
@@ -26,6 +30,7 @@ export default function Form() {
                         // SUCCESS
                         setLoading(false);
                         setSuccess(true);
+                        setPopUpOpen(true);
                         setTimeout(() => {
                             setSuccess(false);
                         }, 2000);
@@ -65,7 +70,7 @@ export default function Form() {
 
     return (
         <section id="formSection">
-
+            {popUpOpen ? <PopUp close={() => setPopUpOpen(false)}/> : null}
             <div id="formContainer">
                 <div id="formImgDiv"></div>
                 <div id="formContent">
