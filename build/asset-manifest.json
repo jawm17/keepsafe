@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/keepsafe/static/css/main.d6fe7c5c.css",
-    "main.js": "/keepsafe/static/js/main.1cb57413.js",
+    "main.js": "/keepsafe/static/js/main.fdd8021d.js",
     "static/media/heroBG.mp4": "/keepsafe/static/media/heroBG.2289a0466b446cc3a8ac.mp4",
     "static/media/Americanflag.png": "/keepsafe/static/media/Americanflag.29a61250a3acec6b96ba.png",
     "static/media/WorkSans-VariableFont_wght.ttf": "/keepsafe/static/media/WorkSans-VariableFont_wght.bb6e3e8193f32a7fc502.ttf",
     "static/media/SourceSansPro-Light.ttf": "/keepsafe/static/media/SourceSansPro-Light.88e269bdeada76364eac.ttf",
-    "static/media/whiteLogoSVG.svg": "/keepsafe/static/media/whiteLogoSVG.434777f8f018f18bdfdb3597eb84f430.svg",
+    "static/media/whiteLogoSVG.svg": "/keepsafe/static/media/whiteLogoSVG.fa6ccb135e41be29aec43a20d97fc39d.svg",
     "static/media/logo.png": "/keepsafe/static/media/logo.bf828a6cbdb8266f4287.png",
     "index.html": "/keepsafe/index.html",
     "main.d6fe7c5c.css.map": "/keepsafe/static/css/main.d6fe7c5c.css.map",
-    "main.1cb57413.js.map": "/keepsafe/static/js/main.1cb57413.js.map"
+    "main.fdd8021d.js.map": "/keepsafe/static/js/main.fdd8021d.js.map"
   },
   "entrypoints": [
     "static/css/main.d6fe7c5c.css",
-    "static/js/main.1cb57413.js"
+    "static/js/main.fdd8021d.js"
   ]
 }
