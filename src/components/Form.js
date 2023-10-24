@@ -70,7 +70,7 @@ export default function Form() {
 
     return (
         <section id="formSection">
-            {popUpOpen ? <PopUp close={() => setPopUpOpen(false)}/> : null}
+            {/* {popUpOpen ? <PopUp close={() => setPopUpOpen(false)}/> : null} */}
             <div id="formContainer">
                 <div id="formImgDiv"></div>
                 <div id="formContent">
