@@ -23,7 +23,7 @@
 #popUpBody {
     width: 90vw;
     max-width: 500px;
-    height: 350px;
+    height: 250px;
     background-color: white;
     border-radius: 8px;
     opacity: 0;
@@ -34,4 +34,18 @@
     left: 50%;
     transform: translate(-50%, -50%);
     position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#popUpContent h1{
+    text-transform: capitalize;
+    font-weight: 500;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    font-size: var(--fs-title);
+    color: var(--blue);
+
 }
