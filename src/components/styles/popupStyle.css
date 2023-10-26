@@ -21,14 +21,15 @@
 }
 
 #popUpBody {
-    width: 90vw;
-    max-width: 500px;
-    height: 250px;
+    width: 80vw;
+    max-width: 400px;
+    height: 200px;
     background-color: white;
     border-radius: 8px;
     opacity: 0;
     transition: all 0.2s ease-in;
-
+    padding-left: 5%;
+    padding-right: 5%;
     z-index: 50;
     top: 50%;
     left: 50%;
@@ -40,12 +41,20 @@
 }
 
 #popUpContent h1{
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     font-weight: 500;
-    padding-left: 5%;
-    padding-right: 5%;
     text-align: center;
-    font-size: var(--fs-title);
+    font-size: var(--fs-title2);
+    color: var(--blue);
+    padding-bottom: 8px;
+
+}
+#popUpContent p{
+    /* text-transform: capitalize; */
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+    font-size: var(--fs-small);
     color: var(--blue);
 
 }

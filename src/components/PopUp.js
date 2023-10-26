@@ -18,7 +18,8 @@ export default function PopUp(props) {
                     <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
                 <div id="popUpContent">
-                    <h1>Thank you for the support!</h1>
+                    <h1>Thank you for the support.</h1>
+                    <p>We will be in contact with you soon.</p>
                 </div>
             </div>
         </div>
