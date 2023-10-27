@@ -15,7 +15,7 @@ export default function Form() {
     const [loading, setLoading] = useState(false);
 
     // true = popup open, false = popup closed
-    const [popUpOpen, setPopUpOpen] = useState(true);
+    const [popUpOpen, setPopUpOpen] = useState(false);
 
     async function submitForm() {
         if (name && email && number && message) {
