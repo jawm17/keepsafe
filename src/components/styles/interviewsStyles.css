@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     margin: auto;
+    position: relative;
 }
 #scrollInterview h1{
     font-size: var(--fs-title);

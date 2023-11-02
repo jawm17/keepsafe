@@ -339,13 +339,7 @@
   #flagConatiner{
     display:none;
   }
-  #heroVideoContainer {
-    align-items: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* background-position: -200px center; */
-    /* background-image: url(https://testsiterd.kinsta.cloud/wp-content/uploads/2023/04/Background.png); */
-  }
+
   #heroMedia {
     /* width: 100vw; */
     height: 600px;

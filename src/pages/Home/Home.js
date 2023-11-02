@@ -97,7 +97,7 @@ export default function Home() {
         </div>
 
         <div id="heroVideoContainer">
-        <video id="heroMedia" loading="lazy"
+        <video id="heroMedia"
           loop
           muted
           ref={videoEl}

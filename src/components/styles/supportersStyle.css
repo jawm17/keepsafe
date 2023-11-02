@@ -43,8 +43,8 @@
 }
 @media only screen and (max-width: 800px) {
   #outerContainerSup {
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: 35px;
+    padding-bottom:10px;
  
   }
   #outerContainerSup h1 {
