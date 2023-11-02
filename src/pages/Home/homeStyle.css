@@ -148,7 +148,6 @@
   position: relative;
   background-color: #ffffff;
   width: 100vw;
-  padding-top: var(--large-spacing);
   padding-bottom: var(--large-spacing);
   /* height: 100vh; */
   scroll-margin: 50px;
@@ -372,7 +371,7 @@
 #section1 {
   width: 90vw;
   margin: auto;
-  padding-top: var(--medium-spacing);
+  padding-top: 20px;
   padding-bottom: var(--medium-spacing);
 }
   #section1HeaderText {
@@ -420,8 +419,3 @@
 
   }
 }
-
-
-
-/* SECTION 2 ======================================================= */
-

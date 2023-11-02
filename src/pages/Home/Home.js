@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState, useRef, Suspense, lazy } from "react";
 import LogoPng from "../../assets/whiteLogoSVG.svg";
 import FlagJpeg from "../../assets/Americanflag.png";
 import HeroBG from "../../assets/heroBG.mp4";
@@ -9,9 +9,11 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Form from "../../components/Form";
 import FAQComp from "../../components/FAQComp";
-import Supporters from "../../components/Supporters";
 import KeyPoints from "../../components/KeyPoints";
 import Interviews from "../../components/Interviews";
+
+// Lazy load the Supporters component
+const Supporters = lazy(() => import('../../components/Supporters'));
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -95,7 +97,7 @@ export default function Home() {
         </div>
 
         <div id="heroVideoContainer">
-        <video id="heroMedia"
+        <video id="heroMedia" loading="lazy"
           loop
           muted
           ref={videoEl}
@@ -107,6 +109,11 @@ export default function Home() {
       <div id="flagConatiner">
         <img src={FlagJpeg}/>
       </div>
+      </div>
+      <div id="scollSup">
+        <Suspense fallback={<div>Loading Supporters...</div>}>
+          <Supporters />
+        </Suspense>
       </div>
       <div id="section1">
         <div id="section1Flex">
@@ -251,15 +258,14 @@ export default function Home() {
       <div id="scrollFAQ">
         <FAQComp />
       </div>
-      <div id="scollSup">
-        <Supporters />
+      {/* Interviews */}
+      <div id="scrollInterview">
+      <Interviews/>
       </div>
       {/* Form */}
       <div id="scollForm">
         <Form />
       </div>
-      {/* Interviews */}
-      {/* <Interviews/> */}
       {/* Footer */}
       <Footer />
     </div>

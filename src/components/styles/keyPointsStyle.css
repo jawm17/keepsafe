@@ -96,6 +96,16 @@
 }
 @media only screen and (max-width: 825px) {
     #keyPointsSection{
-        display: none;
+     
+    }
+    .keys{
+        gap: 5px;
+        font-size: 12px;
+    
+    }
+    #star{
+        fill: var(--white);
+        scale: .4;
+        width: 70px !important;
     }
 }
