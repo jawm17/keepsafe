@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import './styles/supportersStyle.css';
-
+import Idk from "../assets/idk.png"
 
 
 
@@ -45,7 +45,7 @@ const Supporters = () => {
             <img loading="lazy" src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/LaConcha.png?alt=media&token=6301fe81-7de0-4fe2-855e-44be4361d3c3" />
             <img loading="lazy" src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/ROUND%20RISK-01.jpg?alt=media&token=c499b8b5-7910-461b-bd3d-56532c0f5d05" />
             <img loading="lazy" src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/Tequila.png?alt=media&token=17e15b99-16ee-4c2b-92ce-c0442d52405c" />
-            <img loading="lazy" src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/URBAN.png?alt=media&token=15135f54-d02d-4488-843c-9019556f735b" />
+            <img loading="lazy" src={Idk} />
 
           </div>
           <div aria-hidden="true" className="marquee__group">
