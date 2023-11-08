@@ -20,7 +20,7 @@ const Supporters = () => {
             <img loading="lazy" src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/Buffet.png?alt=media&token=58d53753-5b2c-4f32-97e2-88bc25867d86" />
             <img loading="lazy" src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/Razzoos.png?alt=media&token=239be2af-0b0b-4775-81f5-783e3f1511bf" />
             <img loading="lazy"  src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/SMOKEHOUSE.png?alt=media&token=af061eef-14cd-4cdc-9b36-aa037eeb6ae9" />
-            <img loading="lazy" className="whiteLogo" src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/UrbanCreetside.png?alt=media&token=db8a7526-b5d6-424e-9a3e-a412880b4203" />
+            {/* <img loading="lazy" className="whiteLogo" src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/UrbanCreetside.png?alt=media&token=db8a7526-b5d6-424e-9a3e-a412880b4203" /> */}
             <img loading="lazy" src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/Screenshot%20.png?alt=media&token=d193b537-7644-4cf1-a61c-2138779cfd5d" />
           </div>
           <div aria-hidden="true" className="marquee__group">
@@ -31,7 +31,7 @@ const Supporters = () => {
             <img loading="lazy" src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/Ginos.png?alt=media&token=eea17018-37a1-4ebd-a52d-d1abb850499b" />
             <img loading="lazy" src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/RioGrande.png?alt=media&token=1a1e7d00-2194-47e1-a0dc-fdabbcda9646" />
             <img loading="lazy" src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/SnackRoom.png?alt=media&token=c6479257-c987-4d45-9a4d-184c8367694e" />
-            <img loading="lazy" className="whiteLogo" src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/UrbanRoof.png?alt=media&token=9d12b464-9a32-43d8-aaf3-a41726121a46" />
+            {/* <img loading="lazy" className="whiteLogo" src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/UrbanRoof.png?alt=media&token=9d12b464-9a32-43d8-aaf3-a41726121a46" /> */}
             <img loading="lazy" src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/NEW_Playtri.png?alt=media&token=851cbb28-1f91-48e3-83d9-bbefcb25d751" />
 
           </div>

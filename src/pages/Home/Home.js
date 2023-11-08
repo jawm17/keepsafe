@@ -11,6 +11,7 @@ import Form from "../../components/Form";
 import FAQComp from "../../components/FAQComp";
 import KeyPoints from "../../components/KeyPoints";
 import Interviews from "../../components/Interviews";
+import NewsComp from "../News/NewComp";
 
 // Lazy load the Supporters component
 const Supporters = lazy(() => import('../../components/Supporters'));
@@ -262,6 +263,10 @@ export default function Home() {
       <div id="scrollInterview">
       <Interviews/>
       </div>
+      {/* News Blog */}
+      {/* <div id="scrollInterview">
+      <NewsComp/>
+      </div> */}
       {/* Form */}
       <div id="scollForm">
         <Form />
