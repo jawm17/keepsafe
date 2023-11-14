@@ -6,7 +6,8 @@
   --gap: calc(var(--size) / 10);
   --duration: 15s;
   --scroll-start: 5%;
-  --scroll-end: calc(-95% - var(--gap));
+  --scroll-end1: calc(-105% - var(--gap));
+  --scroll-end2: calc(-95% - var(--gap));
 }
 
 @media (prefers-color-scheme: dark) {
@@ -72,7 +73,7 @@
   justify-content: space-around;
   gap: var(--gap);
   min-width: 100%;
-  animation: scroll-x var(--duration) linear infinite;
+  animation: scroll-x1 var(--duration) linear infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -97,14 +98,24 @@
 .marquee--reverse .marquee__group {
   animation-direction: reverse;
   animation-delay: -3s;
+  animation: scroll-x2 var(--duration) linear infinite;
+
 }
 
-@keyframes scroll-x {
+@keyframes scroll-x1 {
   0% {
     transform: translateX(var(--scroll-start));
   }
   100% {
-    transform: translateX(var(--scroll-end));
+    transform: translateX(var(--scroll-end1));
+  }
+}
+@keyframes scroll-x2 {
+  0% {
+    transform: translateX(var(--scroll-end2));
+  }
+  100% {
+    transform: translateX(var(--scroll-start));
   }
 }
 
