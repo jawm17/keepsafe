@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef, Suspense, lazy } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import LogoPng from "../../assets/whiteLogoSVG.svg";
 import FlagJpeg from "../../assets/Americanflag.png";
 import HeroBG from "../../assets/heroBG.mp4";
@@ -11,10 +11,7 @@ import Form from "../../components/Form";
 import FAQComp from "../../components/FAQComp";
 import KeyPoints from "../../components/KeyPoints";
 import Interviews from "../../components/Interviews";
-import NewsComp from "../News/NewComp";
-
-// Lazy load the Supporters component
-const Supporters = lazy(() => import('../../components/Supporters'));
+import Supporters from "../../components/Supporters";
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -43,7 +40,7 @@ export default function Home() {
   const attemptPlay = () => {
     videoEl &&
       videoEl.current &&
-      videoEl.current.play().catch(error => {
+      videoEl.current.play().catch((error) => {
         console.error("Error attempting to play", error);
       });
   };
@@ -56,21 +53,19 @@ export default function Home() {
       {/* Header */}
       <Header />
       {/* Hero */}
-      {/* <img id="img23" src="../../assets/flag.png"/> */}
       <div id="heroSection">
         <div id="heroFlex">
           <div id="heroArea">
             <div id="heroLogoFlex">
               <div className="heroLogoLine left"></div>
-              <img src={LogoPng} id="heroLogo"></img>
+              <img src={LogoPng} id="heroLogo" alt="logo"></img>
               <div className="heroLogoLine right"></div>
             </div>
             <div id="heroText1">
               Supporting Common Sense Sign
               <mark id="boldHeroText"> Regulation Updates in Round Rock</mark>
             </div>
-            <KeyPoints/>
-
+            <KeyPoints />
             <div id="heroBtnFlex">
               <div id="heroBtn" onClick={() => scroll("scollForm")}>
                 <div>Learn More</div>
@@ -98,31 +93,29 @@ export default function Home() {
         </div>
 
         <div id="heroVideoContainer">
-        <video id="heroMedia"
-          loop
-          muted
-          ref={videoEl}
-          playsInline
-          src={HeroBG}
-
-        />
+          <video
+            id="heroMedia"
+            loop
+            muted
+            ref={videoEl}
+            playsInline
+            src={HeroBG}
+          />
         </div>
-      <div id="flagConatiner">
-        <img src={FlagJpeg}/>
-      </div>
+        <div id="flagConatiner">
+          <img src={FlagJpeg} alt="flag" />
+        </div>
       </div>
       <div id="scollSup">
-        <Suspense fallback={<div>Loading Supporters...</div>}>
-          <Supporters />
-        </Suspense>
+        <Supporters />
       </div>
       <div id="section1">
         <div id="section1Flex">
           <div id="section1Area">
             <div id="section1TopText">About Us</div>
             <div id="section1HeaderText">
-              We are a coalition of local Round Rock businesses advocating
-              for new sign rules
+              We are a coalition of local Round Rock businesses advocating for
+              new sign rules
             </div>
             <div id="section1SubText">
               Electronic Message Center (EMC) signs are an effective and modern
@@ -261,7 +254,7 @@ export default function Home() {
       </div>
       {/* Interviews */}
       <div id="scrollInterview">
-      <Interviews/>
+        <Interviews />
       </div>
       {/* News Blog */}
       {/* <div id="scrollInterview">

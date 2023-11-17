@@ -2,7 +2,7 @@
   --color-text: navy;
   --color-bg: papayawhip;
   --color-bg-accent: #ecdcc0;
-  --size: clamp(9.5rem, 1rem + 5vmin, 1rem);
+  --size: clamp(12rem, 1rem + 5vmin, 1rem);
   --gap: calc(var(--size) / 10);
   --duration: 15s;
   --scroll-start: 5%;
