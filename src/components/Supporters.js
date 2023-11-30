@@ -16,7 +16,7 @@ const Supporters = () => {
             <img src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/levelSvg.svg?alt=media&token=52bbecdb-f52a-46de-9793-9c79237cee42"/>
             <img src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/AustIndia.svg?alt=media&token=2023bb3c-7f3d-4cfd-9068-49312220ca7e" />
             <img src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/3StarCandy-01.png?alt=media&token=757408e7-2775-43b8-8888-e2f06e02c90d"/>
-            <img src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/25Years.png?alt=media&token=c39e2f08-617a-4eef-9d01-e15bdf5d4dda" />
+            {/* <img src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/25Years.png?alt=media&token=c39e2f08-617a-4eef-9d01-e15bdf5d4dda" /> */}
             <img src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/Buffet.png?alt=media&token=58d53753-5b2c-4f32-97e2-88bc25867d86" />
             <img src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/Razzoos.png?alt=media&token=239be2af-0b0b-4775-81f5-783e3f1511bf" />
             <img  src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/SMOKEHOUSE.png?alt=media&token=af061eef-14cd-4cdc-9b36-aa037eeb6ae9" />
