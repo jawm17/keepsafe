@@ -1,13 +1,19 @@
 #scrollInterview{
-    padding-bottom: 70px;
+    padding-bottom: 100px;
+    padding-top: 170px;
     max-width: 1200px;
-    flex-direction: column;
+    /* flex-direction: column; */
     display: flex;
+    gap: 5%;
     align-items: center;
     margin: auto;
     position: relative;
 }
 #scrollInterview h1{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 20px;
     font-size: var(--fs-title);
     font-family: var(--fontMain);
     color: var(--blue);
@@ -16,11 +22,12 @@
     font-weight: 400;
 }
 #scrollInterview video{
-    width: 100%;
+    width: 47.5%;
+    /* padding-bottom: 100px; */
 }
 
 @media only screen and (max-width: 825px) {
     #scrollInterview video{
-        width: 90%;
+        width: 47.5%;
     }
 }
