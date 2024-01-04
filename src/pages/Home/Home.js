@@ -17,16 +17,16 @@ export default function Home() {
   const [scrolled, setScrolled] = useState(false);
   const [highlight, setHighlight] = useState(0);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > window.innerHeight * 0.1);
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     setScrolled(window.scrollY > window.innerHeight * 0.1);
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
 
   function scroll(section) {
     document.getElementById(section).scrollIntoView({ behavior: "smooth" });
@@ -255,10 +255,6 @@ export default function Home() {
       <div id="scrollInterview">
         <Interviews />
       </div>
-      {/* News Blog */}
-      {/* <div id="scrollInterview">
-      <NewsComp/>
-      </div> */}
       {/* Form */}
       <div id="scollForm">
         <Form />
