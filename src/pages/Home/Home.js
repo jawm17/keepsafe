@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import LogoPng from "../../assets/whiteLogoSVG.svg";
 import FlagJpeg from "../../assets/Americanflag.png";
-import HeroBG from "../../assets/heroBG.mp4";
 import "./homeStyle.css";
 
 // Comps
@@ -99,7 +98,7 @@ export default function Home() {
             muted
             ref={videoEl}
             playsInline
-            src={HeroBG}
+            src="https://firebasestorage.googleapis.com/v0/b/roundrock-fcf1c.appspot.com/o/heroBG.mp4?alt=media&token=00a3cc66-8c10-4be1-87bd-96c3bbe64940"
           />
         </div>
         <div id="flagConatiner">
