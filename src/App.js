@@ -1,6 +1,6 @@
 import React from 'react';
 import ScrollToTop from "./scrollToTop";
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import "./index.css";
 
 // Pages
@@ -10,13 +10,13 @@ import News from './pages/News/News';
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      <Router>
         <ScrollToTop />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/news" component={News} />
-        </Switch>
-      </BrowserRouter>
+        <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/news" element={<News />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
