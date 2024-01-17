@@ -39,7 +39,7 @@ export default function Home() {
   return (
     <div>
       {/* Header */}
-      <Header />
+      <Header page={"home"}/>
       {/* Hero */}
       <div id="heroSection">
         <div id="heroFlex">

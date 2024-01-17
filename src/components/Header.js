@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 import LogoPng1 from "../assets/whiteLogoSVG.svg";
 import LogoPng2 from "../assets/whiteLogoSVG.svg";
 import "./styles/headerStyle.css";
 
-export default function Header() {
-    const history = useHistory();
+export default function Header(props) {
+    const navigate = useNavigate();
     const [menuOpen, setMenuOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
 
@@ -20,11 +20,17 @@ export default function Header() {
         };
     }, []);
 
-    function scroll(section) {
-        document.getElementById(section).scrollIntoView({ behavior: 'smooth' });
-        setMenuOpen(false);
+    async function scroll(section) {
+        if(props.page === "home") {
+            document.getElementById(section).scrollIntoView({ behavior: 'smooth' });
+            setMenuOpen(false);
+        } else {
+            await navigate("/")
+            document.getElementById(section).scrollIntoView({ behavior: 'smooth' });
+            setMenuOpen(false);
+        }
     }
-    
+
     return (
         <>
             <div id={scrolled || menuOpen ? "headerScrolled" : "headerInitial"}>
@@ -45,7 +51,7 @@ export default function Header() {
                     <div className="headerBtn" onClick={() => scroll("footer")}>
                         contact
                     </div>
-                    <div className="headerBtn" onClick={() => history.push("/news")}>
+                    <div className="headerBtn" onClick={() => navigate("/news")}>
                         news
                     </div>
                 </div>
