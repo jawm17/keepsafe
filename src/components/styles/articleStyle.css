@@ -60,6 +60,8 @@
     display: flex;
     align-items: center;
     color: var(--blue);
+    font-family: var(--fontMain);
+
 }
 
 #readMoreIcon {
