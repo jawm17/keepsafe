@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
+import { useHistory } from "react-router-dom";
 import LogoPng1 from "../assets/whiteLogoSVG.svg";
 import LogoPng2 from "../assets/whiteLogoSVG.svg";
 import "./styles/headerStyle.css";
 
 export default function Header() {
+    const history = useHistory();
     const [menuOpen, setMenuOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
 
@@ -22,6 +24,7 @@ export default function Header() {
         document.getElementById(section).scrollIntoView({ behavior: 'smooth' });
         setMenuOpen(false);
     }
+    
     return (
         <>
             <div id={scrolled || menuOpen ? "headerScrolled" : "headerInitial"}>
@@ -41,6 +44,9 @@ export default function Header() {
                     </div>
                     <div className="headerBtn" onClick={() => scroll("footer")}>
                         contact
+                    </div>
+                    <div className="headerBtn" onClick={() => history.push("/news")}>
+                        news
                     </div>
                 </div>
                 <div id="headerActNowBtn" onClick={() => scroll("scollForm")}>

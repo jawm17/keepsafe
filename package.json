@@ -42,8 +42,5 @@
   },
   "devDependencies": {
     "ghpages": "0.0.10"
-  },
-  "engines": {
-    "node": "18.x"
-}
+  }
 }
