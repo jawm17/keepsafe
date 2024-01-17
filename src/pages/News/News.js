@@ -4,8 +4,10 @@ import Footer from "../../components/Footer";
 import LogoPng from "../../assets/whiteLogoSVG.svg";
 import FlagJpeg from "../../assets/Americanflag.png";
 
+import Article from "../../components/Article";
+import texasArticles from "../../assets/texasArticles.json";
+import nationwideArticles from "../../assets/nationwideArticles.json";
 import "./newsStyle.css";
-
 
 export default function News() {
   // ================
@@ -22,27 +24,25 @@ export default function News() {
   useEffect(() => {
     attemptPlay();
   }, []);
-    return (
-        <div>
-            <Header />
-    {/* Hero */}
+  return (
+    <div>
+      <Header />
+      {/* Hero */}
       <div id="infoHeroSection">
-          <div className="infoHighlightFade">
-        <div id="infoHeroFlex">
-          <div id="infoHeroArea">
+        <div className="infoHighlightFade">
+          <div id="infoHeroFlex">
+            <div id="infoHeroArea">
+              <div id="infoHeroLogoFlex">
+                <div className="infoHeroLogoLine left"></div>
+                <img src={LogoPng} id="infoHeroLogo" alt="logo"></img>
+                <div className="infoHeroLogoLine right"></div>
+              </div>
 
-          <div id="infoHeroLogoFlex">
-              <div className="infoHeroLogoLine left"></div>
-              <img src={LogoPng} id="infoHeroLogo" alt="logo"></img>
-              <div className="infoHeroLogoLine right"></div>
-            </div>
-          
-            <div id="infoHeroText1">
+              <div id="infoHeroText1">
                 Law Enforcement, Emergencies <br />
                 Digital Billboards
+              </div>
             </div>
-            </div>
-
           </div>
         </div>
 
@@ -50,11 +50,29 @@ export default function News() {
           <img src={FlagJpeg} alt="flag" />
         </div> */}
       </div>
-            {/* <div id="infoHero-container">
+      {/* <div id="infoHero-container">
             <div>
             Law Enforcement, Emergencies and Digital Billboards
             </div>
             </div> */}
+
+      <div className="articleSectionTitle">Texas</div>
+      <div id="articleGridOuter">
+        <div id="articleGrid">
+          {texasArticles.map((data) => {
+            return <Article data={data} />;
+          })}
         </div>
-    );
+      </div>
+      <div className="articleSectionTitle">Nationwide</div>
+      <div id="articleGridOuter">
+        <div id="articleGrid">
+          {nationwideArticles.map((data) => {
+            return <Article data={data} />;
+          })}
+        </div>
+      </div>
+      <Footer />
+    </div>
+  );
 }
