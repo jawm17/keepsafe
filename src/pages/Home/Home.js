@@ -14,19 +14,8 @@ import Supporters from "../../components/Supporters";
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
   const [highlight, setHighlight] = useState(0);
 
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     setScrolled(window.scrollY > window.innerHeight * 0.1);
-  //   };
-
-  //   window.addEventListener("scroll", handleScroll);
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
 
   function scroll(section) {
     document.getElementById(section).scrollIntoView({ behavior: "smooth" });
