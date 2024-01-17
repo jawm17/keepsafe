@@ -39,7 +39,7 @@ export default function News() {
               </div>
 
               <div id="infoHeroText1">
-                Law Enforcement, Emergencies <br />
+                Law Enforcement, Emergencies and <br />
                 Digital Billboards
               </div>
             </div>

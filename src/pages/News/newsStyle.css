@@ -1,10 +1,16 @@
 /* HERO SECTION NEWS ======================================================= */
 #infoHeroSection {
-    width: 100vw;
-    height: 75vh;
+    max-width: 1200px;
+    width: 90%;
+    height: 50vh;
+    margin: auto;
+    margin-top: 150px;
+
+    border-radius: 8px;
     overflow-x: hidden;
     overflow-y: hidden;
     position: relative;
+    background-color: var(--blue);
     background-image: url("https://www.roundrocktexas.gov/wp-content/uploads/2021/06/06_21_AERIAL_TOWER_002.jpg");
     background-size: cover;
 
@@ -12,14 +18,14 @@
 .infoHighlightFade {
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.448);
+    background: rgba(0, 0, 0, 0.572);
   }
   
 #infoHeroFlex {
     width: 100%;
     display: flex;
     justify-content: center;
-    padding-top: 11%;
+    padding-top: 5%;
     height: calc(100%);
     position: absolute;
     z-index: 5;
@@ -35,7 +41,7 @@
 
 #infoHeroLogoFlex {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     margin-top: 15px;
 }
@@ -43,7 +49,7 @@
 .infoHeroLogoLine.right {
     background-color: var(--white);
     height: 3.5px;
-    width: 38%;
+    width:30%;
     /* opacity: .8; */
 
 }
@@ -51,11 +57,11 @@
 .infoHeroLogoLine.left {
     background-color: var(--white);
     height: 3.5px;
-    width: 38%;
+    width: 30%;
 }
 
 #infoHeroLogo {
-    height: 13vw;
+    height: 12vw;
 }
 
 #infoHeroText1 {
@@ -63,8 +69,8 @@
     line-height: 1.2;
     text-align: center;
     font-family: var(--fontMain);
-    font-size: var(--fs-hero);
-    margin-top: 10px;
+    font-size: var(--fs-title);
+    margin-top: 25px;
     font-weight: 600;
 }
 
