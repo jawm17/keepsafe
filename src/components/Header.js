@@ -52,7 +52,7 @@ export default function Header(props) {
                         contact
                     </div>
                     <div className="headerBtn" onClick={() => navigate("/news")}>
-                        newssss
+                        news
                     </div>
                 </div>
                 <div id="headerActNowBtn" onClick={() => scroll("scollForm")}>

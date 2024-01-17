@@ -1,0 +1,84 @@
+/* HERO SECTION NEWS ======================================================= */
+#infoHeroSection {
+    width: 100vw;
+    height: 75vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    background-image: url("https://www.roundrocktexas.gov/wp-content/uploads/2021/06/06_21_AERIAL_TOWER_002.jpg");
+    background-size: cover;
+
+}
+.infoHighlightFade {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.448);
+  }
+  
+#infoHeroFlex {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 11%;
+    height: calc(100%);
+    position: absolute;
+    z-index: 5;
+}
+
+#infoHeroArea {
+    width: 95%;
+    max-width: 1300px;
+    min-height: 400px;
+    text-align: center;
+    color: white;
+}
+
+#infoHeroLogoFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.infoHeroLogoLine.right {
+    background-color: var(--white);
+    height: 3.5px;
+    width: 38%;
+    /* opacity: .8; */
+
+}
+
+.infoHeroLogoLine.left {
+    background-color: var(--white);
+    height: 3.5px;
+    width: 38%;
+}
+
+#infoHeroLogo {
+    height: 13vw;
+}
+
+#infoHeroText1 {
+    color: var(--white);
+    line-height: 1.2;
+    text-align: center;
+    font-family: var(--fontMain);
+    font-size: var(--fs-hero);
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+/* #infoFlagConatiner{
+    height: 10px;
+    position: relative;
+    overflow: visible;
+  
+  }
+  #infoFlagConatiner img{
+    width: 75vw;
+    position: absolute;
+    top: 40vh;
+    left: -200px;
+    z-index: 5;
+    rotate: 11deg;
+  } */
