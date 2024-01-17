@@ -94,9 +94,9 @@ export default function Home() {
           <img src={FlagJpeg} alt="flag" />
         </div>
       </div>
-      {/* <div id="scollSup">
+      <div id="scollSup">
         <Supporters />
-      </div> */}
+      </div>
       <div id="section1">
         <div id="section1Flex">
           <div id="section1Area">
