@@ -19,6 +19,7 @@ export default function Article(props) {
             <img className="articleImg" src={props.data.image}></img>
             <div className="articleDescription">
                 {props.data.description}
+                {/* {props.data.description.slice(0, 110) + "..."} */}
             </div>
             <div className="readMoreBtn">
                 <div>

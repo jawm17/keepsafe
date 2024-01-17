@@ -79,6 +79,9 @@ export default function Header(props) {
                     <div className="menuOption" onClick={() => scroll("footer")}>
                         contact
                     </div>
+                    <div className="menuOption" onClick={() => navigate("/news")}>
+                        news
+                    </div>
                     <div id="actNowMenuBtn" onClick={() => scroll("scollForm")}>
                         act now!
                     </div>
