@@ -7,6 +7,7 @@ export default function News() {
     return (
         <div>
             <Header />
+            
         </div>
     );
 }
