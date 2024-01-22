@@ -15,12 +15,20 @@
     background-size: cover;
 
 }
+
+@media only screen and (max-width: 900px) {
+    #infoHeroSection {
+        height: 25vh;
+    }
+}
+
+
 .infoHighlightFade {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.572);
-  }
-  
+}
+
 #infoHeroFlex {
     width: 100%;
     display: flex;
@@ -49,7 +57,7 @@
 .infoHeroLogoLine.right {
     background-color: var(--white);
     height: 3.5px;
-    width:30%;
+    width: 30%;
     /* opacity: .8; */
 
 }
@@ -72,6 +80,36 @@
     font-size: var(--fs-title);
     margin-top: 25px;
     font-weight: 600;
+}
+
+#articleTitleContainer {
+    position: relative;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+.infolLineLine.right {
+    background-color: var(--red);
+    margin-top: 75px;
+    /* background: linear-gradient(45deg, #ffffff 50%, #9f1f21 50%); */
+    height: 3px;
+    width: 12%;
+    /* opacity: .8; */
+
+}
+
+.infolLineLine.left {
+    background-color: var(--red);
+    /* opacity: .8; */
+    margin-top: 75px;
+
+    /* background: linear-gradient(45deg, var(--blue) 50%, white 50%); */
+    height: 3px;
+    width: 12%;
 }
 
 /* #infoFlagConatiner{

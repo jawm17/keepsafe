@@ -55,8 +55,12 @@ export default function News() {
             Law Enforcement, Emergencies and Digital Billboards
             </div>
             </div> */}
+            <div id="articleTitleContainer">
+                <div className="infolLineLine left"></div>
 
       <div className="articleSectionTitle">Texas</div>
+      <div className="infolLineLine right"></div>
+</div>
       <div id="articleGridOuter">
         <div id="articleGrid">
           {texasArticles.map((data) => {
@@ -64,7 +68,12 @@ export default function News() {
           })}
         </div>
       </div>
+      <div id="articleTitleContainer">
+                <div className="infolLineLine left"></div>
+
       <div className="articleSectionTitle">Nationwide</div>
+      <div className="infolLineLine right"></div>
+</div>
       <div id="articleGridOuter">
         <div id="articleGrid">
           {nationwideArticles.map((data) => {

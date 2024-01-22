@@ -22,7 +22,8 @@
     font-size: var(--fs-hero);
     font-family: var(--fontMain);
     margin-top: 60px;
-    /* font-weight: bold; */
+    color: var(--blue);
+    font-weight: 500;
 }
 
 

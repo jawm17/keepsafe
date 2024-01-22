@@ -51,9 +51,9 @@ export default function Header(props) {
                     <div className="headerBtn" onClick={() => scroll("footer")}>
                         contact
                     </div>
-                    {/* <div className="headerBtn" onClick={() => navigate("/news")}>
+                    <div className="headerBtn" onClick={() => navigate("/news")}>
                         news
-                    </div> */}
+                    </div>
                 </div>
                 <div id="headerActNowBtn" onClick={() => scroll("scollForm")}>
                     act now
@@ -79,9 +79,9 @@ export default function Header(props) {
                     <div className="menuOption" onClick={() => scroll("footer")}>
                         contact
                     </div>
-                    {/* <div className="menuOption" onClick={() => navigate("/news")}>
+                    <div className="menuOption" onClick={() => navigate("/news")}>
                         news
-                    </div> */}
+                    </div>
                     <div id="actNowMenuBtn" onClick={() => scroll("scollForm")}>
                         act now!
                     </div>
