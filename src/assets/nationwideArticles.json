@@ -24,10 +24,16 @@
         "date": "5/3/23"
     },
     {
-        "description": "Buckeye, Arizona police use electronic billboards for tips in hit-and-run homicide.",
-        "link": "https://www.buckeyeaz.gov/Home/Components/News/News/2220/",
-        "image": "https://www.buckeyeaz.gov/home/showpublishedimage/12566/638161260311030000",
+        "description": "Arizona Republic: Billboards along Interstate 10 ask for information on youth homicide case",
+        "link": "https://www.azcentral.com/story/news/local/southwest-valley/2023/04/03/two-billboards-call-more-information-in-2020-youth-homicide-case/70077863007/",
+        "image": "https://www.azcentral.com/gcdn/presto/2023/04/03/PPHX/acc27e9e-4659-47cf-a29d-4b89a2625e97-Anaiah_Walker_Billboard.png?width=1320&height=378&fit=crop&format=pjpg&auto=webp",
         "date": "4/3/23"
+    },
+    {
+        "description": "Tahoe Regional Planning Agency used digital billboards to fight litter",
+        "link": "https://billboardinsider.com/planners-use-billboards-to-keep-community-clean/?utm_source=rss&utm_medium=rss&utm_campaign=planners-use-billboards-to-keep-community-clean",
+        "image": "https://billboardinsider.com/wp-content/uploads/2020/02/Screen-Shot-2020-02-26-at-2.14.24-PM.png",
+        "date": "2/27/20"
     },
     {
         "description": "Fallen police officer honored on electronic billboard in Allentown, Pennsylvania",
@@ -42,10 +48,82 @@
         "date": "1/27/20"
     },
     {
+        "description": "Sen. Amy Klobuchar used digital billboards as prosecutor to find shooter of child",
+        "link": "https://oaaa.org/blog-posts/former-prosecutor-klobuchar-calls-out-billboard-power-in-dem-debate/",
+        "image": "https://oaaa.org/wp-content/uploads/2022/09/GettyImages-1154261868-e1568395786151.jpg",
+        "date": "9/13/19"
+    },
+    {
+        "description": "Linn County, Iowa Sheriff’s Office used digital billboards to raise awareness of Driver’s License Reinstatement Payment Plan",
+        "link": "https://www.kcrg.com/content/news/Sheriffs-office-to-use-billboards-to-raise-awareness-of-programs-538300561.html",
+        "image": "https://gray-kcrg-prod.cdn.arcpublishing.com/resizer/v2/AY7QS2OT2VKHTBUZ6ZMKHYGSVY.jpg?auth=0523342c26da397c4a7a86c398113c0b4ec5a5e9b7bb07de30adcf2d646e0119&width=1600&height=900&smart=true",
+        "date": "8/12/19"
+    },
+    {
         "description": "Digital billboards used to locate missing children in West Virgina",
         "link": "https://www.heraldmailmedia.com/story/news/local/2019/05/27/digital-billboard-operators-cooperate-to-help-locate-missing-childre/44296165/",
         "image": "https://www.heraldmailmedia.com/gcdn/media/2021/05/23/Hagerstown/a6f6a09799582759a368443e6935daa6.jpg?width=660&height=187&fit=crop&format=pjpg&auto=webp",
         "date": "5/27/19"
+    },
+    {
+        "description": "Digital billboards used for tornado updates in Oklahoma",
+        "link": "https://billboardinsider.com/digital-billboards-change-fast-with-tornado-updates/",
+        "image": "https://billboardinsider.com/wp-content/uploads/2019/05/Screen-Shot-2019-05-23-at-12.03.07-PM.png",
+        "date": "5/24/19"
+    },
+    {
+        "description": "Sugarcreek Township, Ohio used digital billboard to find missing teen",
+        "link": "https://oaaa.org/blog-posts/powerful-testimonials-remind-us-ooh-is-part-of-the-solution/",
+        "image": "https://oaaa.org/wp-content/uploads/2022/09/Jacob-Caldwell-Cincinnati-1024x681.jpg",
+        "date": "4/15/19"
+    },
+    {
+        "description": "Ohio useddigital billboards in FBI missing teen case",
+        "link": "https://www.whio.com/news/local/ohio-among-states-asked-use-digital-billboards-fbi-missing-teen-case/fiKicqA6UsrMd2jeXkc4mK/",
+        "image": "https://cmg-cmg-tv-10040-prod.cdn.arcpublishing.com/resizer/hpyr2iUsSlibVeubh_u6fDXpP1I=/800x0/filters:format(jpg):quality(70)/arc-anglerfish-arc2-prod-cmg.s3.amazonaws.com/public/PJ5KEWOILCCEPS73HJA4EMTUPA.jpg",
+        "date": "4/10/19"
+    },
+    {
+        "description": "Digital billboards used across country to combat US opioid crisis",
+        "link": "https://billboardinsider.com/ooh-working-to-combat-us-opioid-epidemic/",
+        "image": "https://billboardinsider.com/wp-content/uploads/2019/03/Billboard_campaign_targets_opioid_epidem_9_73851924_ver1.0_1280_720-1024x576-600x338.jpg",
+        "date": "3/21/19"
+    },
+    {
+        "description": "Government used digital billboards for traffic and safety messages",
+        "link": "https://oaaa.org/blog-posts/trafficsafetyviaooh/",
+        "image": "https://oaaa.org/wp-content/uploads/2022/09/PHI-010789-DB_Campaign_PATurnpikeCommission_2019-02-19_151918015-e1552310355830-1024x440.jpg",
+        "date": "3/11/19"
+    },
+    {
+        "description": "Law enforcement used digital billboards to spread word for wanted criminals or missing persons",
+        "link": "https://oaaa.org/blog-posts/billboardsspreadtheword/",
+        "image": "https://oaaa.org/wp-content/uploads/2022/09/caldwell-billboard-insit-e1547837868382-1024x471.jpg",
+        "date": "1/1/19"
+    },
+    {
+        "description": "Ohio Public Safety Director said billboards were impactful on state’s fight against opiate abuse",
+        "link": "https://oaaa.org/blog-posts/ohioopioidcampaign/",
+        "image": "https://oaaa.org/wp-content/uploads/2022/09/starttalkingohio.jpg",
+        "date": "10/31/18"
+    },
+    {
+        "description": "FBI used billboard for 13-year-old missing Wisconsin girl",
+        "link": "https://www.wave3.com/2018/10/20/billboard-missing-wisconsin-girl-appears-near-slugger-field/",
+        "image": "https://gray-wave-prod.cdn.arcpublishing.com/resizer/v2/6PFBJGEZGFHCLLJ4UBYNESPTVI.bmp?auth=29a3f11d901077e891778c113310e15f4c227b57c1d7eb3a0f19775003a00dbf&width=1600&height=900&smart=true",
+        "date": "10/19/18"
+    },
+    {
+        "description": "US Marshalls most wanted fugitive turned himself in after seeing self on billboard",
+        "link": "https://billboardinsider.com/fugutive-sees-photo-on-billboards-turns-self-in/",
+        "image": "https://billboardinsider.com/wp-content/uploads/2018/03/Screen-Shot-2018-03-28-at-12.38.02-PM.png",
+        "date": "3/19/18"
+    },
+    {
+        "description": "FBI highlights a decade of digital billboard safety messages",
+        "link": "https://www.fbi.gov/news/stories/10-years-of-digital-billboards",
+        "image": "https://www.fbi.gov/image-repository/digital-billboard-collage-120717.jpg/@@images/image/large",
+        "date": "12/7/17"
     },
     {
         "description": "Tampa, Florida used 19 digital billboards to spread word about four unsolved murders",
@@ -54,10 +132,22 @@
         "date": "11/17/17"
     },
     {
-        "description": "FBI highlights a decade of digital billboard safety messages",
-        "link": "https://www.fbi.gov/news/stories/10-years-of-digital-billboards",
-        "image": "https://www.fbi.gov/image-repository/digital-billboard-collage-120717.jpg/@@images/image/large",
-        "date": "12/7/17"
+        "description": "FBI used digital billboards to aid in Las Vegas mass shooting investigation",
+        "link": "https://billboardinsider.com/fbi-salutes-clear-channel-outdoor/",
+        "image": "https://billboardinsider.com/wp-content/uploads/2018/04/Picture1.jpg",
+        "date": "10/6/17"
+    },
+    {
+        "description": "FBI activated digital billboards in eight states",
+        "link": "https://billboardinsider.com/fbi-adds-new-fugitive-to-ten-most-wanted-list-and-activates-digital-billboards-in-eight-states/",
+        "image": "https://billboardinsider.com/wp-content/uploads/2016/06/Screen-Shot-2016-06-29-at-7.38.09-AM.png",
+        "date": "6/29/16"
+    },
+    {
+        "description": "Iowa man turned himself in after seeing picture on digital billboard",
+        "link": "https://www.kcrg.com/content/news/US-Marshals-searching-for-child-sexual-predator-in-eastern-Iowa-384718631.html",
+        "image": "https://gray-kcrg-prod.cdn.arcpublishing.com/resizer/v2/HA7K7BNAIZJ4FCSJQ3E6FOKIUI.jpg?auth=63bd84e8b4b8d6c4e6e22190dffd2875ac4afaf5a9c41ff3b4f500c01fcc6d3c&width=1600&height=900&smart=true",
+        "date": "6/28/16"
     },
     {
         "description": "FBI: Catching fugitives in the information age",

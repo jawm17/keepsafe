@@ -37,30 +37,20 @@ export default function News() {
                 <img src={LogoPng} id="infoHeroLogo" alt="logo"></img>
                 <div className="infoHeroLogoLine right"></div>
               </div>
-
               <div id="infoHeroText1">
                 Law Enforcement, Emergencies and <br />
-                Digital Billboards
+                Electronic Signs
               </div>
             </div>
           </div>
         </div>
-
-        {/* <div id="infoFlagConatiner">
-          <img src={FlagJpeg} alt="flag" />
-        </div> */}
       </div>
-      {/* <div id="infoHero-container">
-            <div>
-            Law Enforcement, Emergencies and Digital Billboards
-            </div>
-            </div> */}
-            <div id="articleTitleContainer">
-                <div className="infolLineLine left"></div>
+      <div id="articleTitleContainer">
+        <div className="infolLineLine left"></div>
 
-      <div className="articleSectionTitle">Texas</div>
-      <div className="infolLineLine right"></div>
-</div>
+        <div className="articleSectionTitle">Texas</div>
+        <div className="infolLineLine right"></div>
+      </div>
       <div id="articleGridOuter">
         <div id="articleGrid">
           {texasArticles.map((data) => {
@@ -69,11 +59,11 @@ export default function News() {
         </div>
       </div>
       <div id="articleTitleContainer">
-                <div className="infolLineLine left"></div>
+        <div className="infolLineLine left"></div>
 
-      <div className="articleSectionTitle">Nationwide</div>
-      <div className="infolLineLine right"></div>
-</div>
+        <div className="articleSectionTitle">Nationwide</div>
+        <div className="infolLineLine right"></div>
+      </div>
       <div id="articleGridOuter">
         <div id="articleGrid">
           {nationwideArticles.map((data) => {
