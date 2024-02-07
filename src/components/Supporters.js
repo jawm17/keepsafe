@@ -11,7 +11,7 @@ const Supporters = () => {
           {data.logos1.map((logo, key) => {
             return (
               <div key={key} className="slide">
-                <img id={"bish1-" + key} src={logo} width="150" alt="" />
+                <img id={"bish1-" + key} src={logo} width="170" alt="" />
               </div>
             );
           })}
@@ -22,7 +22,7 @@ const Supporters = () => {
           {data.logos2.map((logo, key) => {
             return (
               <div key={key} className="slide">
-                <img id={"bish2-" + key} src={logo} width="150" alt="" />
+                <img id={"bish2-" + key} src={logo} width="170" alt="" />
               </div>
             );
           })}
