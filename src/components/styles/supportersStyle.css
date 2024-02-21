@@ -92,16 +92,16 @@
   -webkit-animation: scroll2 35s linear infinite;
   animation: scroll2 35s linear infinite;
   animation-direction: reverse;
-  width: calc(200px * 37);
+  width: calc(200px * 35);
 }
 
 /* turn black */
 #bish1-9,
 #bish1-28,
-#bish2-13,
-#bish2-32,
-#bish2-2,
-#bish2-21
+#bish2-12,
+#bish2-32
+/* #bish2-2 */
+/* #bish2-21 */
  {
   filter: invert(1);
 
@@ -164,8 +164,8 @@
     }
   
     100% {
-      -webkit-transform: translateX(calc(-130px * 18.5));
-      transform: translateX(calc(-130px * 18.5));
+      -webkit-transform: translateX(calc(-130px * 16.5));
+      transform: translateX(calc(-130px * 16.5));
     }
   }
   
@@ -176,8 +176,8 @@
     }
   
     100% {
-      -webkit-transform: translateX(calc(-130px * 18.5));
-      transform: translateX(calc(-130px * 18.5));
+      -webkit-transform: translateX(calc(-130px * 16.5));
+      transform: translateX(calc(-130px * 16.5));
     }
   }
 }
@@ -212,8 +212,8 @@
   }
 
   100% {
-    -webkit-transform: translateX(calc(-200px * 18.5));
-    transform: translateX(calc(-200px * 18.5));
+    -webkit-transform: translateX(calc(-200px * 16.5));
+    transform: translateX(calc(-200px * 16.5));
   }
 }
 
@@ -224,7 +224,7 @@
   }
 
   100% {
-    -webkit-transform: translateX(calc(-200px * 18.5));
-    transform: translateX(calc(-200px * 18.5));
+    -webkit-transform: translateX(calc(-200px * 16.5));
+    transform: translateX(calc(-200px * 16.5));
   }
 }
