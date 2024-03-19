@@ -1,10 +1,12 @@
 #scrollInterview{
-    padding-bottom: 100px;
+    padding-bottom: 0;
     padding-top: 170px;
     max-width: 1200px;
     /* min-height: 50vh; */
     /* flex-direction: column; */
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 5%;
     align-items: center;
     margin: auto;
@@ -25,6 +27,7 @@
 #scrollInterview #video{
     width: 47.5%;
     height: 300px;
+    padding-bottom: 5%;
     /* padding-bottom: 100px; */
 }
 #scrollInterview .video{
